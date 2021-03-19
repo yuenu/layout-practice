@@ -1,0 +1,130 @@
+:root {
+  --background: rgba(85, 214, 170, 0.85);
+}
+
+*,
+*::after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #222;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.content {
+  height: 200vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("./bg.jpg") no-repeat center / cover;
+  background-blend-mode: multiply;
+  display: grid;
+  place-items: center;
+}
+
+/* navigation styles start here */
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 1em 0;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background-color: #fff;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 10px;
+}
+
+.nav-toggle-label span::after {
+  top: 10px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.5s ease-in-out;
+}
+
+nav li {
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  display: block;
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav li:hover {
+  background-color: rgba(0, 214, 170, 0.85);
+}
+
+nav li:hover a {
+  color: #000;
+}
+
+#nav-toggle:checked ~ nav {
+  display: block;
+  transform: scale(1, 1);
+}
+
+#nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}

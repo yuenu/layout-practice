@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    bottom: 0;
+    box-sizing:border-box;
+}
+
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Poppins", sans-serif;
+    height:100vh;
+}
+
+.carousel{
+    box-shadow:2px 2px 5px rgba(0,0,0,0.7);
+    height:500px;
+    width:500px;
+    overflow:hidden;
+}
+
+.image-container{
+    display:flex;
+    transition:transform 0.3s linear;
+    transform:trnaslateY(0);
+}
+
+img{
+    object-fit:cover;
+    height:500px;
+    width:500px;
+}

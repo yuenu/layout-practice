@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c8dce7;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 14em 14em 14em 20em;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -2;
+}
+
+.container {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3em;
+  border-radius: 3em;
+  position: relative;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  background-clip: padding-box;
+  border: solid 2px transparent;
+  -webkit-box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+          box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.container .seq {
+  padding: 3px;
+}
+
+.header-title {
+  margin-top: 4rem;
+  font-size: 4em;
+  padding: 10px;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}
+/*# sourceMappingURL=style.css.map */

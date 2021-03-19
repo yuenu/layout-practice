@@ -1,0 +1,26 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: lightcoral;
+    min-height: 100vh;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+}
+
+#container{
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+    height:500px;
+    width:500px;
+    
+}
+
+img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}

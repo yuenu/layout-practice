@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    display:flex;
+    align-items:center;
+    min-height:100vh;
+    justify-content:center;
+}
+
+.progress {
+    background-color: #d8d8d8;
+    border-radius:20px;
+    height:40px;
+    width:400px;
+}
+
+.progress-done {
+    background: linear-gradient(to left, #f2709C, #FF9472);
+    box-shadow:0 3px 3px -5px #f2709C, 0 2px 5px #f2709C;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    width:200px;
+    opacity:0;
+    color:#fff;
+    transition: 3s ease;
+}

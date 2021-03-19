@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #5d00d6;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: white;
+  font-family: "Poppins";
+}
+
+button {
+  background: none;
+  border: none;
+  color: white;
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  outline: none;
+  width: 10em;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background: #5000b8;
+    height: 100%;
+    width: 100%;
+    top: 0.5em;
+    left: 0.5em;
+    z-index: -1;
+    border-radius: 0.2em;
+  }
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  clip-path: circle(0% at 50% 50%);
+}
+
+svg {
+  position: absolute;
+  top: 0.7em;
+  left: 0.5em;
+  stroke-dasharray: 0 103;
+}

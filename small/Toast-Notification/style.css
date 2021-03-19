@@ -1,0 +1,36 @@
+html,body{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+}
+
+button{
+    background-color:rebeccapurple;
+    color:white;
+    padding:1rem;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    font-family:"Roboto Mono", sans-serif;
+}
+
+#container{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+
+.toast {
+    background-color:rebeccapurple;
+    color:white;
+    padding:2rem;
+    border-radius:5px;
+    margin:1rem;
+}

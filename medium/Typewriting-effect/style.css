@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:sans-serif;
+}
+
+.intro {
+    display:flex;
+    height:100vh;
+    color:white;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./cover.jpg);
+    background-size:cover;
+}
+
+.typing {
+    margin-left:10px;
+    position: relative;
+}
+
+.typing::after {
+    content:'';
+    position:absolute;
+    width:1px;
+    height:6%;
+    right:-5px;
+    border-right: 3px solid white;
+    animation:blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
