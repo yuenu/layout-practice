@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#ddd;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  min-height:100vh;
+}
+
+.progress-bar {
+  width:500px;
+  height:3rem;
+  background-color:#111;
+  border-radius:1.5rem;
+  color:#fff;
+  position:relative;
+}
+
+.progress-bar:before {
+  content: attr(data-label);
+  position:absolute;
+  left:.5rem;
+  top:.5rem;
+  bottom:.5rem;
+  display:flex;
+  align-items: center;
+  width:calc(var(--width, 0) * 1%);
+  min-width:2rem;
+  max-width:calc(100% - 1rem);
+  background-color:#069;
+  border-radius:1rem;
+}
