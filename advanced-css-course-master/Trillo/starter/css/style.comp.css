@@ -21,8 +21,7 @@ Grey dark 3: #999
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box;
-  font-size: 100%; }
+  box-sizing: border-box; }
 
 body {
   background-color: #eb2f64; }

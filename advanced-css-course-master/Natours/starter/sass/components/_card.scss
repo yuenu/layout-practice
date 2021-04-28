@@ -6,7 +6,6 @@
   height: 52rem;
 
   &__side {
-    height: 52rem;
     transition: all 1s ease;
     height: 50rem;
     overflow: hidden;
@@ -70,7 +69,6 @@
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 
-
     &-1 {
       background-image: linear-gradient(
           to right bottom,
@@ -82,20 +80,20 @@
 
     &-2 {
       background-image: linear-gradient(
-      to right bottom,
-      $color-primary-light,
-      $color-primary-dark
-    ),
-      url(../img/nat-6.jpg);
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../img/nat-6.jpg);
     }
 
     &-3 {
       background-image: linear-gradient(
-        to right bottom,
-        $color-tertiary-light,
-        $color-tertiary-dark
-      ),
-      url(../img/nat-7.jpg);
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../img/nat-7.jpg);
     }
   }
 
@@ -181,5 +179,54 @@
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
+  }
+
+  @include respond(tab-port) {
+    height: auto;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0deg);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+
+    &:hover &__side--back {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    // BACK SIDE STYLE
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width:100%;
+      padding: 7rem 4rem 4rem 4rem;
+      text-align: center;
+    }
+
+    &__price-box {
+      margin-bottom: 8rem;
+    }
+
+
+    &__price-value {
+      font-size: 4rem;
+    }
   }
 }
