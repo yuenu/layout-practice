@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 900px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 180px;
+  grid-template-rows: 80px 180px 300px 80px;
+  gap: 20px;
+}
+
+.item {
+  background: red;
+  color: #fff;
+  padding: 1rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.header {
+  grid-column: 1 / span 4;
+}
+
+.box1 {
+}
+.box2 {
+}
+.box3 {
+}
+
+.sidebar {
+  grid-column: 4 / 4;
+  grid-row: 2 / 4;
+}
+.main-content {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+}
+
+.footer {
+  grid-column: 1 / span 4;
+  grid-row: 4 / 4;
+}
