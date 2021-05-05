@@ -1,17 +1,20 @@
-%heading{
+%heading {
   font-family: $font-display;
   font-weight: 400;
 }
 
-
 .heading-1 {
   @extend %heading;
+  font-size: 4.5rem;
+  color: $color-grey-light-1;
+  line-height: 1;
 }
 
 .heading-2 {
   @extend %heading;
   font-size: 4rem;
   font-style: italic;
+  line-height: 1;
 
   &--light {
     color: $color-grey-light-1;
@@ -49,7 +52,7 @@
   font-family: $font-display;
   font-size: 1.5rem;
   text-transform: uppercase;
-  padding:1.8rem 3rem;
+  padding: 1.8rem 3rem;
   cursor: pointer;
   transition: all 0.2s;
 
@@ -58,7 +61,15 @@
   }
 }
 
-.mb-sm {margin-bottom: 2rem;}
-.mb-md {margin-bottom: 3rem;}
-.mb-lg {margin-bottom: 4rem;}
-.mb-bg {margin-bottom: 8rem;}
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-bg {
+  margin-bottom: 8rem;
+}
