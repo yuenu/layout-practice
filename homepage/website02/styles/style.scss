@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;1,600&family=Ubuntu:wght@400;500;700&display=swap");
+
+//------------------------------------------------------------
+// ### Primary
+
+// -Light red (CTA text): hsl(356, 100%, 66%)
+// -Very light red (CTA hover background): hsl(355, 100%, 74%)
+// -Very dark blue (headings): hsl(208, 49%, 24%)
+//------------------------------------------------------------
+// ### Neutral
+
+// - White (text): hsl(0, 0%, 100%)
+// - Grayish blue (footer text): hsl(240, 2%, 79%)
+// - Very dark grayish blue (body copy): hsl(207, 13%, 34%)
+// - Very dark black blue (footer background): hsl(240, 10%, 16%)
+//------------------------------------------------------------
+// ### Gradient
+
+// Background gradient - Intro/CTA mobile nav:
+
+// - Very light red: hsl(13, 100%, 72%)
+// - Light red: hsl(353, 100%, 62%)
+//------------------------------------------------------------
+// Background gradient - body:
+
+// - Very dark gray blue: hsl(237, 17%, 21%)
+// - Very dark desaturated blue: hsl(237, 23%, 32%)
+
+$color-white: #ffffff;
+$color-gray: #c8c8cb;
+$color-red: rgb(255, 82, 93);
+$color-light-red: hsl(355, 100%, 74%);
+$color-dark-blue: hsl(208, 49%, 24%);
+$color-black: hsl(240, 10%, 16%);
+
+$text-blue: hsl(240, 2%, 79%);
+
+$line-height: 2;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  background-color: $color-white;
+}
+
+// utils
+.content {
+  margin-bottom: 8rem;
+
+  &__heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-dark-blue;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-size: 1.1rem;
+    line-height: $line-height;
+  }
+}
+
+// hero section
+.hero {
+  background: rgb(255, 143, 112);
+  background: url(../images/bg-pattern-intro.svg) no-repeat 30% 51%,
+    linear-gradient(90deg, rgba(255, 143, 112, 1) 5%, rgba(255, 61, 84, 1) 100%);
+  width: 100%;
+  height: 500px;
+  border-bottom-left-radius: 100px;
+  position: relative;
+  z-index: 2;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: -1;
+  }
+
+  &__content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__secondary {
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+  }
+
+  &__buttons {
+    button {
+      font-family: "Ubuntu", sans-serif;
+      background-color: $color-white;
+      width: 10rem;
+      height: 4rem;
+      margin: 0 0.5rem;
+      border: none;
+      border-radius: 50px;
+      font-weight: 900;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    button:first-child {
+      color: $color-red;
+
+      &:hover {
+        background-color: $color-light-red;
+        color: $color-white;
+        transition: 0.25s background-color ease;
+      }
+    }
+
+    button:last-child {
+      color: $color-white;
+      background: transparent;
+      border: 1px solid $color-white;
+
+      &:hover {
+        color: $color-red;
+        background: $color-white;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  height: 8rem;
+  width: 100%;
+  max-width: 1440px;
+  align-items: center;
+  margin: 0 auto;
+
+  &__logo {
+    margin-left: 5rem;
+  }
+
+  &__navigation {
+    flex: 0 0 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 8rem;
+    font-weight: 700;
+
+    &__dropdown {
+      overflow: hidden;
+    }
+
+    &__dropbtn {
+      font-size: 1rem;
+      border: none;
+      outline: none;
+      color: $color-gray;
+      padding: 1rem 0;
+      background-color: inherit;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    &__dropdown:hover &__dropbtn {
+      color: $color-white;
+    }
+
+    &__dropdown-arrow {
+      margin-left: 0.3rem;
+    }
+
+    &__dropdown:hover &__dropdown-arrow {
+      transform: rotate(180deg);
+    }
+
+    &__dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: $color-white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      padding: 1rem;
+    }
+
+    &__dropdown:hover &__dropdown-content {
+      display: block;
+    }
+
+    &__link {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      font-weight: 400;
+      font-family: "Ubuntu", sans-serif;
+
+      &:hover {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__user {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-right: 8rem;
+
+    &__login,
+    &__signup {
+      color: $color-gray;
+      padding: 0.8rem 2.2rem;
+      border-radius: 50px;
+      margin: 0 3px;
+      cursor: pointer;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    &__signup {
+      background: $color-white;
+      color: $color-red;
+
+      &:hover {
+        background: $color-light-red;
+      }
+    }
+  }
+}
+
+// Introduction section
+.intro {
+  width: 100%;
+  height: 120vh;
+  padding: 10rem 5rem;
+  background-image: url(../images/illustration-editor-desktop.svg);
+  background-position: 140% 100%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+
+  &__heading {
+    text-align: center;
+    font-size: 2.6rem;
+    color: $color-dark-blue;
+  }
+
+  &__content {
+    width: 50%;
+    padding: 10rem 6.2rem;
+  }
+}
+
+.state {
+  height: 700px;
+  padding: 5rem;
+  background: url(../images/illustration-phones.svg) no-repeat 20% 20%;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__bg {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background: url(../images/bg-pattern-circles.svg) no-repeat left bottom,
+      hsl(237, 23%, 32%);
+    background-size: 50%;
+    z-index: -1;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  &__text {
+    width: 50%;
+    float: right;
+    color: $color-white;
+    padding: 7rem 20rem 7rem 0rem;
+
+    &__title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &__description {
+      line-height: $line-height;
+    }
+  }
+}
+
+.feature {
+  height: 1100px;
+  background: url(../images/illustration-laptop-desktop.svg) no-repeat -52% 0%;
+  background-size: 65%;
+
+  &__content {
+    width: 50%;
+    float: right;
+    padding: 14rem 15rem 7rem 0rem;
+  }
+}
+
+.footer {
+  padding: 5rem 8rem;
+  background: hsl(240, 10%, 16%);
+  height: 400px;
+  display: flex;
+  border-top-right-radius: 100px;
+
+  &__logo {
+    flex: 0 0 200px;
+    background: url(../images/logo.svg) no-repeat;
+    background-size: 60%;
+  }
+
+  &__list {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 3rem;
+  }
+
+  &__item {
+    ul {
+      margin-top: 2rem;
+      list-style: none;
+    }
+
+    &__link {
+      line-height: 2.2;
+      color: $color-gray;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: 2px solid $color-gray;
+      }
+    }
+  }
+
+  &__item__heading {
+    color: $color-white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}

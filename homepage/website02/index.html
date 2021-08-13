@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- hero section -->
+    <section class="hero">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <nav class="header__navigation">
+
+          <div class="header__navigation__dropdown">
+            <button class="header__navigation__dropbtn">
+              Product 
+              <img
+                class="header__navigation__dropdown-arrow"
+                src="./images/icon-arrow-light.svg"
+                alt="arrow"
+              />
+            </button>
+            <div class="header__navigation__dropdown-content">
+              <a class="header__navigation__link" href="#Overview">Overview</a>
+              <a class="header__navigation__link" href="#Pricing">Pricing</a>
+              <a class="header__navigation__link" href="#Marketplace">Marketplace</a>
+              <a class="header__navigation__link" href="#Features">Features</a>
+            </div>
+          </div> 
+
+          <div class="header__navigation__dropdown">
+            <button class="header__navigation__dropbtn">
+              Company 
+              <img
+                class="header__navigation__dropdown-arrow"
+                src="./images/icon-arrow-light.svg"
+                alt="arrow"
+              />
+            </button>
+            <div class="header__navigation__dropdown-content">
+              <a class="header__navigation__link" href="#About">About</a>
+              <a class="header__navigation__link" href="#Team">Team</a>
+              <a class="header__navigation__link" href="#Blog">Blog</a>
+              <a class="header__navigation__link" href="#Careers">Careers</a>
+            </div>
+          </div> 
+
+          <div class="header__navigation__dropdown">
+            <button class="header__navigation__dropbtn">
+              Connect 
+              <img
+                class="header__navigation__dropdown-arrow"
+                src="./images/icon-arrow-light.svg"
+                alt="arrow"
+              />
+            </button>
+            <div class="header__navigation__dropdown-content">
+              <a class="header__navigation__link" href="#Contact">Contact</a>
+              <a class="header__navigation__link" href="#Newsletter">Newsletter</a>
+              <a class="header__navigation__link" href="#LinkedIn">LinkedIn</a>
+            </div>
+          </div> 
+        </nav>
+
+        <div class="header__user">
+          <a href="/" class="header__user__login">Login</a>
+          <a href="/" class="header__user__signup">Sign Up</a>
+        </div>
+      </header>
+      <div class="hero__content">
+        <h1 class="hero__heading">A modern publishing platform</h1>
+        <h5 class="hero__secondary">
+          Grow your audience and build your online brand
+        </h5>
+        <div class="hero__buttons">
+          <button class="cta__button">Start for Free</button>
+          <button class="cta__button">Learn More</button>
+        </div>
+      </div>
+    </section>
+    <!-- intro section -->
+    <section class="intro">
+      <h1 class="intro__heading">Designed for the future</h1>
+      <div class="intro__content">
+        <div class="content">
+          <h2 class="content__heading">Introducing an extensible editor</h2>
+          <div class="content__description">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </div>
+        </div>
+
+        <div class="content">
+          <h2 class="content__heading">Robust content management</h2>
+          <div class="content__description">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- state section -->
+    <section class="state">
+      <div class="state__bg">
+        <div class="state__text">
+          <h2 class="state__text__title">State of the Art Infrastructure</h2>
+          <p class="state__text__description">
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature section -->
+    <section class="feature">
+      <div class="feature__content">
+        <div class="content">
+          <div class="content__heading">Free, open, simple</div>
+          <div class="content__description">
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content__heading">Powerful tooling</div>
+          <div class="content__description">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__logo"></div>
+      <div class="footer__list">
+        <div class="footer__item">
+          <h5 class="footer__item__heading">Product</h5>
+          <ul>
+            <li><a href="#" class="footer__item__link">Overview</a></li>
+            <li><a href="#" class="footer__item__link">Pricing</a></li>
+            <li><a href="#" class="footer__item__link">Marketplace</a></li>
+            <li><a href="#" class="footer__item__link">Features</a></li>
+            <li><a href="#" class="footer__item__link">Integrations</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h5 class="footer__item__heading">Company</h5>
+          <ul>
+            <li><a href="#" class="footer__item__link">About</a></li>
+            <li><a href="#" class="footer__item__link">Team</a></li>
+            <li><a href="#" class="footer__item__link">Blog</a></li>
+            <li><a href="#" class="footer__item__link">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h5 class="footer__item__heading">Connect</h5>
+          <ul>
+            <li><a href="#" class="footer__item__link">Contact</a></li>
+            <li><a href="#" class="footer__item__link">Newsletter</a></li>
+            <li><a href="#" class="footer__item__link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://profile-d6420.firebaseapp.com/">Josh Hsu</a>.
+    </div>
+  </body>
+</html>
