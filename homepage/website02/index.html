@@ -26,17 +26,15 @@
     </style>
   </head>
   <body>
-    <!-- hero section -->
-    <section class="hero">
-      <header class="header">
+    <header class="header">
+      <div class="header__container">
         <div class="header__logo">
           <img src="./images/logo.svg" alt="logo" />
         </div>
         <nav class="header__navigation">
-
           <div class="header__navigation__dropdown">
             <button class="header__navigation__dropbtn">
-              Product 
+              Product
               <img
                 class="header__navigation__dropdown-arrow"
                 src="./images/icon-arrow-light.svg"
@@ -46,14 +44,16 @@
             <div class="header__navigation__dropdown-content">
               <a class="header__navigation__link" href="#Overview">Overview</a>
               <a class="header__navigation__link" href="#Pricing">Pricing</a>
-              <a class="header__navigation__link" href="#Marketplace">Marketplace</a>
+              <a class="header__navigation__link" href="#Marketplace"
+                >Marketplace</a
+              >
               <a class="header__navigation__link" href="#Features">Features</a>
             </div>
-          </div> 
+          </div>
 
           <div class="header__navigation__dropdown">
             <button class="header__navigation__dropbtn">
-              Company 
+              Company
               <img
                 class="header__navigation__dropdown-arrow"
                 src="./images/icon-arrow-light.svg"
@@ -66,11 +66,11 @@
               <a class="header__navigation__link" href="#Blog">Blog</a>
               <a class="header__navigation__link" href="#Careers">Careers</a>
             </div>
-          </div> 
+          </div>
 
           <div class="header__navigation__dropdown">
             <button class="header__navigation__dropbtn">
-              Connect 
+              Connect
               <img
                 class="header__navigation__dropdown-arrow"
                 src="./images/icon-arrow-light.svg"
@@ -79,17 +79,22 @@
             </button>
             <div class="header__navigation__dropdown-content">
               <a class="header__navigation__link" href="#Contact">Contact</a>
-              <a class="header__navigation__link" href="#Newsletter">Newsletter</a>
+              <a class="header__navigation__link" href="#Newsletter"
+                >Newsletter</a
+              >
               <a class="header__navigation__link" href="#LinkedIn">LinkedIn</a>
             </div>
-          </div> 
+          </div>
         </nav>
 
         <div class="header__user">
           <a href="/" class="header__user__login">Login</a>
           <a href="/" class="header__user__signup">Sign Up</a>
         </div>
-      </header>
+      </div>
+    </header>
+    <!-- HERO SECTION START -->
+    <section class="hero">
       <div class="hero__content">
         <h1 class="hero__heading">A modern publishing platform</h1>
         <h5 class="hero__secondary">
@@ -100,6 +105,93 @@
           <button class="cta__button">Learn More</button>
         </div>
       </div>
+
+      <img
+        class="header__mobile__menu"
+        src="./images/icon-hamburger.svg"
+        alt="menu"
+        onclick="menuToggle()"
+      />
+      <!-- MOBILE NAVIGATION -->
+      <nav class="header__mobile__navigation">
+        <div class="header__mobile__navigation__dropdown">
+          <button class="header__mobile__navigation__dropbtn dropbtn">
+            Product
+            <img
+              class="header__mobile__navigation__dropdown-arrow"
+              src="./images/icon-arrow-dark.svg"
+              alt="dark-arrow"
+            />
+          </button>
+          <div class="header__mobile__navigation__dropdown-content">
+            <a class="header__mobile__navigation__link" href="#Contact"
+              >Overview</a
+            >
+            <a class="header__mobile__navigation__link" href="#Newsletter"
+              >Pricing</a
+            >
+            <a class="header__mobile__navigation__link" href="#LinkedIn"
+              >Marketplace</a
+            >
+            <a class="header__mobile__navigation__link" href="#LinkedIn"
+              >Features</a
+            >
+          </div>
+        </div>
+
+        <div class="header__mobile__navigation__dropdown">
+          <button class="header__mobile__navigation__dropbtn">
+            Company
+            <img
+              class="header__mobile__navigation__dropdown-arrow"
+              src="./images/icon-arrow-dark.svg"
+              alt="dark-arrow"
+            />
+          </button>
+          <div class="header__mobile__navigation__dropdown-content">
+            <a class="header__mobile__navigation__link" href="#Contact"
+              >About</a
+            >
+            <a class="header__mobile__navigation__link" href="#Newsletter"
+              >Team</a
+            >
+            <a class="header__mobile__navigation__link" href="#LinkedIn"
+              >Blog</a
+            >
+            <a class="header__mobile__navigation__link" href="#LinkedIn"
+              >Careers</a
+            >
+          </div>
+        </div>
+
+        <div class="header__mobile__navigation__dropdown">
+          <button class="header__mobile__navigation__dropbtn dropbtn">
+            Connect
+            <img
+              class="header__mobile__navigation__dropdown-arrow"
+              src="./images/icon-arrow-dark.svg"
+              alt="dark-arrow"
+            />
+          </button>
+          <div class="header__mobile__navigation__dropdown-content">
+            <a class="header__mobile__navigation__link" href="#Contact"
+              >Contact</a
+            >
+            <a class="header__mobile__navigation__link" href="#Newsletter"
+              >Newsletter</a
+            >
+            <a class="header__mobile__navigation__link" href="#LinkedIn"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        
+        <div class="header__mobile__user">
+          <hr>
+          <a href="/" class="header__mobile__user__login">Login</a>
+          <a href="/" class="header__mobile__user__signup">Sign Up</a>
+        </div>
+      </nav>
     </section>
     <!-- intro section -->
     <section class="intro">
@@ -209,5 +301,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://profile-d6420.firebaseapp.com/">Josh Hsu</a>.
     </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
