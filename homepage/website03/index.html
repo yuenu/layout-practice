@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/main.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="top-bg"></div>
+  <div class="container p-5">
+    <header class="header d-flex justify-content-between align-items-start flex-column flex-md-row mb-4">
+      <div class="header-text">
+        <h3 class="fs-2 text-white">Social Media Dashboard</h3>
+        <h6 class="fs-6 desaturated-blue">Total Followers: 23,004</h6>
+      </div>
+      <div class="header-theme desaturated-blue fw-bolder d-flex gap-3">
+        <span>Dark Mode</span>
+        <label class="toggle-control">
+          <input type="checkbox" checked="checked">
+          <span class="control"></span>
+        </label>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="row gap-4 gap-lg-0">
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 text-center rounded-2">
+            <div class="card-title">
+              <img class="brand-icon" src="./images/icon-facebook.svg" alt="facebook">
+              <span class="ms-2 fw-bolder">@nathanf</span>
+            </div>
+            <div class="card-body">
+              <span class="number fw-bold">1987</span>
+              <div class="followers">followers</div>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="increase">
+                <span class="fw-bolder increase">12 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 text-center rounded-2">
+            <div class="card-title">
+              <img class="brand-icon" src="./images/icon-twitter.svg" alt="twitter">
+              <span class="ms-2 fw-bolder">@nathanf</span>
+            </div>
+            <div class="card-body">
+              <span class="number fw-bold">1044</span>
+              <div class="followers">followers</div>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="increase">
+                <span class="fw-bolder increase">99 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 text-center rounded-2">
+            <div class="card-title">
+              <img class="brand-icon" src="./images/icon-instagram.svg" alt="instagram">
+              <span class="ms-2 fw-bolder">@nathanf</span>
+            </div>
+            <div class="card-body">
+              <span class="number fw-bold">11k</span>
+              <div class="followers">followers</div>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="increase">
+                <span class="fw-bolder increase">1099 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 text-center rounded-2">
+            <div class="card-title">
+              <img class="brand-icon" src="./images/icon-youtube.svg" alt="youtube">
+              <span class="ms-2 fw-bolder">@nathanf</span>
+            </div>
+            <div class="card-body">
+              <span class="number fw-bold">8239</span>
+              <div class="followers">Subscribers</div>
+              <div class="crease mt-4">
+                <img src="./images/icon-down.svg" alt="down" class="down">
+                <span class="fw-bolder decrease">144 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+    <!-- overview section -->
+    <section class="overview mt-4">
+      <h1 class="heading text-white my-3 mt-5">Overview - Today</h1>
+
+      <div class="row gap-4 gap-lg-0 mb-4 mb-lg-0">
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 d-flex">
+            <div class="card-top d-flex justify-content-between">
+              <span class="fs-6 fw-bolder">Page Views</span>
+              <img class="brand-icon" src="./images/icon-facebook.svg" alt="facebook">
+            </div>
+
+            <div class="card-bottom mt-auto d-flex justify-content-between">
+              <span class="fs-1 fw-bolder">87</span>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="up">
+                <span class="fw-bolder increase">3%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 d-flex">
+            <div class="card-top d-flex justify-content-between">
+              <span class="fs-6 fw-bolder">Likes</span>
+              <img class="brand-icon" src="./images/icon-facebook.svg" alt="facebook">
+            </div>
+
+            <div class="card-bottom mt-auto d-flex justify-content-between">
+              <span class="fs-1 fw-bolder">52</span>
+              <div class="crease mt-4">
+                <img src="./images/icon-down.svg" alt="down" class="down">
+                <span class="fw-bolder decrease">2%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 d-flex">
+            <div class="card-top d-flex justify-content-between">
+              <span class="fs-6 fw-bolder">Likes</span>
+              <img class="brand-icon" src="./images/icon-instagram.svg" alt="instagram">
+            </div>
+
+            <div class="card-bottom mt-auto d-flex justify-content-between">
+              <span class="fs-1 fw-bolder">5462</span>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="up">
+                <span class="fw-bolder increase">2257%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 d-flex">
+            <div class="card-top d-flex justify-content-between">
+              <span class="fs-6 fw-bolder">Profile Views</span>
+              <img class="brand-icon" src="./images/icon-instagram.svg" alt="instagram">
+            </div>
+
+            <div class="card-bottom mt-auto d-flex justify-content-between">
+              <span class="fs-1 fw-bolder">52k</span>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="up">
+                <span class="fw-bolder increase">1375%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row gap-4 gap-lg-0">
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 d-flex">
+            <div class="card-top d-flex justify-content-between">
+              <span class="fs-6 fw-bolder">ReTweets</span>
+              <img class="brand-icon" src="./images/icon-twitter.svg" alt="twitter">
+            </div>
+
+            <div class="card-bottom mt-auto d-flex justify-content-between">
+              <span class="fs-1 fw-bolder">117</span>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="up">
+                <span class="fw-bolder increase">303%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 d-flex">
+            <div class="card-top d-flex justify-content-between">
+              <span class="fs-6 fw-bolder">Likes</span>
+              <img class="brand-icon" src="./images/icon-twitter.svg" alt="twitter">
+            </div>
+
+            <div class="card-bottom mt-auto d-flex justify-content-between">
+              <span class="fs-1 fw-bolder">507</span>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="up">
+                <span class="fw-bolder increase">553%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 d-flex">
+            <div class="card-top d-flex justify-content-between">
+              <span class="fs-6 fw-bolder">Likes</span>
+              <img class="brand-icon" src="./images/icon-youtube.svg" alt="youtube">
+            </div>
+
+            <div class="card-bottom mt-auto d-flex justify-content-between">
+              <span class="fs-1 fw-bolder">107</span>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="up">
+                <span class="fw-bolder decrease">2257%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
+          <div class="card p-4 d-flex">
+            <div class="card-top d-flex justify-content-between">
+              <span class="fs-6 fw-bolder">Total Views</span>
+              <img class="brand-icon" src="./images/icon-youtube.svg" alt="youtube">
+            </div>
+
+            <div class="card-bottom mt-auto d-flex justify-content-between">
+              <span class="fs-1 fw-bolder">1407</span>
+              <div class="crease mt-4">
+                <img src="./images/icon-up.svg" alt="up" class="up">
+                <span class="fw-bolder decrease">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">yuenu</a>.
+    </div>
+  </div>
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
