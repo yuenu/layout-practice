@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/main.css">
+  <title>Frontend Mentor | Crowdfunding product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container justify-content-between align-items-center d-flex">
+      <a href="/" class="header__logo">
+        <img src="./images/logo.svg" alt="brand-logo">
+      </a>
+      <ul class="nav">
+        <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+        <li class="nav-item"><a href="#discover" class="nav-link text-white">Discover</a></li>
+        <li class="nav-item"><a href="#start" class="nav-link text-white">Get Started</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="production w-100 f-dlex justify-content-center">
+    <div class="production__container container d-flex flex-column gap-4">
+      <!-- box1 -->
+      <div class="box text-center">
+        <div class="title fs-3 fw-bolder mb-3">Mastercraft Bamboo Monitor Riser</div>
+        <div class="lead text-black-50 mb-5">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</div>
+        <div class="buttons d-flex justify-content-between">
+          <a href="#cta-btn" class="btn btn-cyan fw-bolder rounded-pill custom-btn">Back this projet</a>
+          <a href="#cta-btn" id="bookmark" class="bg-gray text-muted fw-bolder rounded-pill custom-btn">Bookmark</a>
+        </div>
+      </div>
+      <!-- box2 -->
+      <div class="box">
+        <div class="row mb-5">
+          <div class="col-12 col-md-4">
+            <div class="target text-muted fs-6"><p class="fs-1 fw-bolder text-dark">$89,914</p>of $100,000 backed</div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="total-target text-muted fs-6"><p class="fs-1 fw-bolder text-dark">5,007</p>total backers</div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="dats-left text-muted fs-6"><p class=" fs-1 fw-bolder text-dark">56 </p>days left</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="process rounded-pill"></div>
+        </div>
+      </div>
+
+      <!-- box3-->
+      <div class="box">
+        <div class="title fs-3 mb-3 mb-sm-5 fw-bolder">About this project</div>
+        <div class="description lh-lg text-black-50 mb-5" style="font-weight:500 !important;">
+          The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+  to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+  your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+          <br>
+          <br>
+  Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+  to allow notepads, pens, and USB sticks to be stored under the stand.
+        </div>
+        <!-- card1 -->
+        <div class="card p-4 rounded-3 mb-4">
+          <div class=" d-flex flex-column flex-sm-row justify-content-between align-items-start mb-4">
+            <div class="fs-4 fw-bolder">Bamboo Stand</div>
+            <a href="#pledge" class="btn pledge fw-bolder ps-0">Pledge $25 or more</a>
+          </div>
+          <div class="text-muted fw-normal mb-4" style="font-weight:500 !important;">
+            You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+            you’ll be added to a special Backer member list.
+          </div>
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start mb-4">
+            <div class="text mb-4 mb-sm-0"><span class="fs-2 fw-bolder">101</span> left</div>
+            <a href="#selectReward" class="btn custom-btn btn-cyan rounded-pill">Select Reward</a>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="card p-4 rounded-3 mb-4">
+          <div class=" d-flex flex-column flex-sm-row justify-content-between align-items-start mb-4">
+            <div class="fs-4 fw-bolder">Black Edition Stand</div>
+            <a href="#pledge" class="btn pledge fw-bolder ps-0">Pledge $75 or more</a>
+          </div>
+          <div class="text-muted fw-normal mb-3" style="font-weight:500 !important;">
+            You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+    member list. Shipping is included.
+          </div>
+          <div class="d-flex  flex-column flex-sm-row justify-content-between align-items-start mb-4">
+            <div class="text mb-4 mb-sm-0"><span class="fs-2 fw-bolder">64</span> left</div>
+            <a href="#selectReward" class="btn custom-btn btn-cyan rounded-pill">Select Reward</a>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="card p-4 rounded-3 out-stock">
+          <div class=" d-flex flex-column flex-sm-row justify-content-between align-items-start  mb-4">
+            <div class="fs-4 fw-bolder">Mahogany Special Edition</div>
+            <a href="#pledge" class="btn pledge fw-bolder ps-0"> Pledge $200 or more</a>
+          </div>
+          <div class="text-muted fw-normal mb-3" style="font-weight:500 !important;">
+            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+      to our Backer member list. Shipping is included.
+          </div>
+          <div class="footer d-flex  flex-column flex-sm-row justify-content-between align-items-start mb-4">
+            <div class="text mb-4 mb-sm-0"><span class="fs-2 fw-bolder">0</span> left</div>
+            <a href="#selectReward" class="btn custom-btn text-white rounded-pill">Out of Stock</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      </div>
+
+  </div>
+    </div>
+  </section>
+
+
+  
+ 
+  
+  
+
+  <!-- Selection modal start -->
+
+  Back this project
+  Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
+
+  Pledge with no reward
+  Choose to support us without a reward if you simply believe in our project. As a backer, 
+  you will be signed up to receive product updates via email.
+
+  Bamboo Stand
+  Pledge $25 or more
+  You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+  you’ll be added to a special Backer member list.
+  101 left
+
+  <!-- Selected pledge start -->
+  Enter your pledge
+  $25
+  Continue
+  <!-- Selected pledge end -->
+
+  Black Edition Stand
+  Pledge $75 or more
+  You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+  member list. Shipping is included.
+  64 left
+
+  <!-- Selected pledge start -->
+  Enter your pledge
+  $75
+  Continue
+  <!-- Selected pledge end -->
+
+  Mahogany Special Edition
+  Pledge $200 or more
+  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+  to our Backer member list. Shipping is included.
+  0 left
+
+  <!-- Selected pledge  start -->
+  Enter your pledge
+  $200
+  Continue
+  <!-- Selected pledge end -->
+
+  <!-- Selection modal end -->
+
+  <!-- Success modal start -->
+
+  Thanks for your support!
+  Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+  an email once our campaign is completed.
+  Got it!
+
+  <!-- Success modal end -->
+
+
+  <!-- Bootstrap CDN import -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
