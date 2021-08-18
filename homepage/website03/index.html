@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/main.css">
+  <link id="theme-style" rel="stylesheet" href="./assets/default.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -20,13 +20,13 @@
   <div class="container p-5">
     <header class="header d-flex justify-content-between align-items-start flex-column flex-md-row mb-4">
       <div class="header-text">
-        <h3 class="fs-2 text-white">Social Media Dashboard</h3>
-        <h6 class="fs-6 desaturated-blue">Total Followers: 23,004</h6>
+        <h3 class="fs-2 heading">Social Media Dashboard</h3>
+        <h6 class="fs-6 main-text">Total Followers: 23,004</h6>
       </div>
-      <div class="header-theme desaturated-blue fw-bolder d-flex gap-3">
-        <span>Dark Mode</span>
+      <div class="header-theme main-text fw-bolder d-flex gap-3 w-100 mw-md-auto justify-content-between justify-content-md-end">
+        <span class="align-self-center">Dark Mode</span>
         <label class="toggle-control">
-          <input type="checkbox" checked="checked">
+          <input id="theme-control" type="checkbox" checked="checked">
           <span class="control"></span>
         </label>
       </div>
@@ -35,7 +35,7 @@
     <main class="main">
       <div class="row gap-4 gap-lg-0">
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 text-center rounded-2">
+          <div class="card border-0 p-4 text-center rounded-2">
             <div class="card-title">
               <img class="brand-icon" src="./images/icon-facebook.svg" alt="facebook">
               <span class="ms-2 fw-bolder">@nathanf</span>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 text-center rounded-2">
+          <div class="card border-0 p-4 text-center rounded-2">
             <div class="card-title">
               <img class="brand-icon" src="./images/icon-twitter.svg" alt="twitter">
               <span class="ms-2 fw-bolder">@nathanf</span>
@@ -69,7 +69,7 @@
         </div>
 
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 text-center rounded-2">
+          <div class="card border-0 p-4 text-center rounded-2">
             <div class="card-title">
               <img class="brand-icon" src="./images/icon-instagram.svg" alt="instagram">
               <span class="ms-2 fw-bolder">@nathanf</span>
@@ -86,7 +86,7 @@
         </div>
 
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 text-center rounded-2">
+          <div class="card border-0 p-4 text-center rounded-2">
             <div class="card-title">
               <img class="brand-icon" src="./images/icon-youtube.svg" alt="youtube">
               <span class="ms-2 fw-bolder">@nathanf</span>
@@ -108,11 +108,11 @@
 
     <!-- overview section -->
     <section class="overview mt-4">
-      <h1 class="heading text-white my-3 mt-5">Overview - Today</h1>
+      <h1 class="heading my-3 mt-5">Overview - Today</h1>
 
       <div class="row gap-4 gap-lg-0 mb-4 mb-lg-0">
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 d-flex">
+          <div class="card border-0 p-4 d-flex">
             <div class="card-top d-flex justify-content-between">
               <span class="fs-6 fw-bolder">Page Views</span>
               <img class="brand-icon" src="./images/icon-facebook.svg" alt="facebook">
@@ -129,7 +129,7 @@
         </div>
 
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 d-flex">
+          <div class="card border-0 p-4 d-flex">
             <div class="card-top d-flex justify-content-between">
               <span class="fs-6 fw-bolder">Likes</span>
               <img class="brand-icon" src="./images/icon-facebook.svg" alt="facebook">
@@ -146,7 +146,7 @@
         </div>
 
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 d-flex">
+          <div class="card border-0 p-4 d-flex">
             <div class="card-top d-flex justify-content-between">
               <span class="fs-6 fw-bolder">Likes</span>
               <img class="brand-icon" src="./images/icon-instagram.svg" alt="instagram">
@@ -163,7 +163,7 @@
         </div>
 
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 d-flex">
+          <div class="card border-0 p-4 d-flex">
             <div class="card-top d-flex justify-content-between">
               <span class="fs-6 fw-bolder">Profile Views</span>
               <img class="brand-icon" src="./images/icon-instagram.svg" alt="instagram">
@@ -183,7 +183,7 @@
 
       <div class="row gap-4 gap-lg-0">
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 d-flex">
+          <div class="card border-0 p-4 d-flex">
             <div class="card-top d-flex justify-content-between">
               <span class="fs-6 fw-bolder">ReTweets</span>
               <img class="brand-icon" src="./images/icon-twitter.svg" alt="twitter">
@@ -200,7 +200,7 @@
         </div>
 
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 d-flex">
+          <div class="card border-0 p-4 d-flex">
             <div class="card-top d-flex justify-content-between">
               <span class="fs-6 fw-bolder">Likes</span>
               <img class="brand-icon" src="./images/icon-twitter.svg" alt="twitter">
@@ -217,7 +217,7 @@
         </div>
 
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 d-flex">
+          <div class="card border-0 p-4 d-flex">
             <div class="card-top d-flex justify-content-between">
               <span class="fs-6 fw-bolder">Likes</span>
               <img class="brand-icon" src="./images/icon-youtube.svg" alt="youtube">
@@ -234,7 +234,7 @@
         </div>
 
         <div class="col-12 col-lg-6 col-xxl-3 mb-0 mb-lg-4">
-          <div class="card p-4 d-flex">
+          <div class="card border-0 p-4 d-flex">
             <div class="card-top d-flex justify-content-between">
               <span class="fs-6 fw-bolder">Total Views</span>
               <img class="brand-icon" src="./images/icon-youtube.svg" alt="youtube">
@@ -261,5 +261,6 @@
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
