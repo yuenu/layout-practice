@@ -178,6 +178,30 @@ body {
           box-shadow: none;
 }
 
+/* Modal section */
+.modal-modal {
+  border-radius: 0.5rem;
+}
+
+.modal .btn-close {
+  margin: 0 0 auto auto;
+}
+
+.modal .selectProjectLabel,
+.modal .form-check-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 @media (min-width: 768px) {
   .box:nth-of-type(2) > .row > div:nth-of-type(2)::before, .box:nth-of-type(2) > .row > div:nth-of-type(2)::after {
     height: 80%;

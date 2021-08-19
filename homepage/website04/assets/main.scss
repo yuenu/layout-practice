@@ -153,15 +153,15 @@ body {
     background-color: #eeeeee;
     color: var(--dark-gray);
     transition: 0.25s;
-    width:150px;
+    width: 150px;
 
     &.booked {
-      width:172px;
+      width: 172px;
 
       svg circle {
         fill: var(--cyan);
       }
-  
+
       svg path {
         fill: #ffffff;
       }
@@ -176,7 +176,32 @@ body {
       box-shadow: none;
     }
   }
+}
 
+/* Modal section */
+.modal {
+
+  &-modal {
+    border-radius: 0.5rem;
+  }
+  .btn-close {
+    margin: 0 0 auto auto;
+  }
+
+  .selectProjectLabel,
+  .form-check-label {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: transparent;
+  }
+}
+
+.disable {
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
