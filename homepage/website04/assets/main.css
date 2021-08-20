@@ -33,6 +33,10 @@
   background-color: var(--dark-cyan);
 }
 
+.text-cyan {
+  color: var(--cyan);
+}
+
 .bg-gray {
   background-color: var(--gray);
 }
@@ -48,13 +52,59 @@ body {
 
 .header {
   height: 40vh;
-  background: url(../images/image-hero-desktop.jpg);
+  background: url(../images/image-hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .header__container {
   min-height: 100px;
+}
+
+.header .nav {
+  display: none;
+}
+
+.dropdown {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  background: url(../images/icon-hamburger.svg) no-repeat;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger.active {
+  background: url(../images/icon-close-menu.svg) no-repeat;
+}
+
+.hamburger.active ~ .dropdown {
+  width: 90%;
+  background: #ffffff;
+  color: #000000;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburger.active ~ .dropdown ul {
+  list-style-type: none;
 }
 
 .production__container {
@@ -187,8 +237,59 @@ body {
   margin: 0 0 auto auto;
 }
 
-.modal .selectProjectLabel,
+.modal .card .title {
+  color: #000000;
+}
+
+.modal .card:hover .title {
+  color: var(--cyan);
+}
+
+.modal .card:hover .pledge {
+  font-weight: bolder;
+}
+
+.modal-box.active {
+  border: 3px solid var(--cyan);
+}
+
+.modal-box.active .collapse {
+  display: block;
+}
+
+.modal .form-check-input {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.modal .form-check-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal .form-check-input:checked {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.modal .form-check-input:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: var(--cyan);
+  border-radius: 50%;
+}
+
 .modal .form-check-label {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
@@ -200,6 +301,23 @@ body {
 .disable {
   opacity: 0.6;
   pointer-events: none;
+}
+
+.back-project {
+  width: 100%;
+}
+
+#bookmark {
+  width: 50px;
+  height: 50px;
+}
+
+#bookmark svg {
+  left: 0;
+}
+
+#bookmark-text {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -219,8 +337,39 @@ body {
 }
 
 @media (min-width: 576px) {
+  .header {
+    background: url(../images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .dropdown {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .hamburger.active ~ .dropdown {
+    display: none;
+  }
   .box {
     padding: 3rem;
+  }
+  .back-project {
+    width: 150px;
+  }
+  #bookmark {
+    width: 150px;
+  }
+  #bookmark svg {
+    left: -14px;
+  }
+  #bookmark-text {
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=main.css.map */
