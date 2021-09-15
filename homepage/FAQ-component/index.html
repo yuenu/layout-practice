@@ -27,88 +27,93 @@
     </style>
   </head>
   <body>
-    <main class="main">
-      <div class="main__container">
-        <div class="main__pic">
-          <img
-            src="./images/illustration-woman-online-desktop.svg"
-            alt="illustration-woman"
-          />
-          <img
-            src="./images/illustration-box-desktop.svg"
-            alt="illustration-box"
-          />
-        </div>
-        <div class="main__content">
-          <div class="main__card">
-            <h1 class="main__title">FAQ</h1>
-            <div class="main__heading">
-              How many team members can I invite?
-              <div class="main__arror">
-                <img src="./images/icon-arrow-down.svg" alt="arrow" />
-              </div>
-            </div>
-            <div class="main__description">
-              You can invite up to 2 additional users on the Free plan. There is
-              no limit on team members for the Premium plan.
-            </div>
-          </div>
-
-          <div class="main__card">
-            <div class="main__heading">
-              What is the maximum file upload size?
-              <div class="main__arror">
-                <img src="./images/icon-arrow-down.svg" alt="arrow" />
-              </div>
-            </div>
-            <div class="main__description">
-              No more than 2GB. All files in your account must fit your allotted
-              storage space.
-            </div>
-          </div>
-
-          <div class="main__card">
-            <div class="main__heading">
-              How do I reset my password?
-              <div class="main__arror">
-                <img src="./images/icon-arrow-down.svg" alt="arrow" />
-              </div>
-            </div>
-            <div class="main__description">
-              Click “Forgot password” from the login page or “Change password”
-              from your profile page. A reset link will be emailed to you.
-            </div>
-          </div>
-
-          <div class="main__card">
-            <div class="main__heading">
-              Can I cancel my subscription?
-              <div class="main__arror">
-                <img src="./images/icon-arrow-down.svg" alt="arrow" />
-              </div>
-            </div>
-            <div class="main__description">
-              Yes! Send us a message and we’ll process your request no questions
-              asked.
-            </div>
-          </div>
-          <div class="main__card">
-            <div class="main__heading">
-              Do you provide additional support?
-              <div class="main__arror">
-                <img src="./images/icon-arrow-down.svg" alt="arrow" />
-              </div>
-            </div>
-            <div class="main__description">
-              Chat and email support is available 24/7. Phone lines are open
-              during normal business hours.
-            </div>
-          </div>
-        </div>
+    <main class="container">
+      <div class="illustration">
+        <div class="illustration__box"></div>
       </div>
+      <article class="accordion">
+        <h1 class="accordion__title">FAQ</h1>
+        <ul class="accordion__list">
+          <li class="accordion__item">
+            <button class="accordion__question">
+              How many team members can I invite?
+              <picture class="accordion__arrow">
+                <img src="./images/icon-arrow-down.svg" alt="arrow" />
+              </picture>
+            </button>
+            <div class="accordion__answer">
+              <span>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </span>
+            </div>
+          </li>
+
+          <li class="accordion__item">
+            <button class="accordion__question">
+              What is the maximum file upload size?
+              <picture class="accordion__arrow">
+                <img src="./images/icon-arrow-down.svg" alt="arrow" />
+              </picture>
+            </button>
+            <div class="accordion__answer">
+              <span>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </span>
+            </div>
+          </li>
+
+          <li class="accordion__item">
+            <button class="accordion__question">
+              How do I reset my password?
+              <picture class="accordion__arrow">
+                <img src="./images/icon-arrow-down.svg" alt="arrow" />
+              </picture>
+            </button>
+            <div class="accordion__answer">
+              <span>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </span>
+            </div>
+          </li>
+
+          <li class="accordion__item">
+            <button class="accordion__question">
+              Can I cancel my subscription?
+              <picture class="accordion__arrow">
+                <img src="./images/icon-arrow-down.svg" alt="arrow" />
+              </picture>
+            </button>
+            <div class="accordion__answer">
+              <span>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </span>
+            </div>
+          </li>
+
+          <li class="accordion__item">
+            <button class="accordion__question">
+              Do you provide additional support?
+              <picture class="accordion__arrow">
+                <img src="./images/icon-arrow-down.svg" alt="arrow" />
+              </picture>
+            </button>
+            <div class="accordion__answer">
+              <span>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </span>
+            </div>
+          </li>
+        </ul>
+      </article>
     </main>
     <div class="attribution">
-      Created by <a href="https://github.com/yuenu">Yuenu</a>.
+      Created by
+      <a target="_new" href="https://github.com/yuenu">Yuenu</a>.
     </div>
 
     <script src="./app.js"></script>

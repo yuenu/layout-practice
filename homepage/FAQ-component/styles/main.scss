@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-$color-dark-blue: hsl(238, 29%, 16%);
-
 *,
 *::before,
 *::after {
@@ -14,61 +12,167 @@ body,
 html {
   height: 100%;
   font-family: "Kumbh Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.main {
+button {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
     to bottom,
     hsl(273, 75%, 66%),
     hsl(240, 73%, 65%)
   );
+}
+
+.container {
+  padding: 5rem 6.25rem 5rem 0;
+  width: 57.5em;
+  height: 31.875em;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: -1px -1px 5px rgba(115, 148, 255, 0.75);
+}
 
-  &__container {
-    max-width: 1200px;
-    height: 70vh;
-    background-color: #fff;
-    border-radius: 30px;
-    padding: 4rem;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
+.illustration {
+  height: 31.875em;
+  width: 24.375em;
+  background: url(../images/illustration-woman-online-desktop.svg),
+    url(../images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%, 100%;
+  background-position-y: 50%, 67%;
+  transform: translateY(0%);
+  position: relative;
 
-  &__pic,
-  &__content {
-    width: 50%;
+  &__box {
+    background-image: url(../images/illustration-box-desktop.svg);
     position: relative;
+    background-repeat: no-repeat;
+    height: 11.25em;
+    width: 12.5em;
+    animation: 1.1s updown infinite alternate;
+    margin-left: -5.813em;
+    margin-top: 11.875em;
   }
+}
 
-  &__pic img:nth-child(1) {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+.accordion {
+  width: 21.875em;
 
   &__title {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
-  &__card {
-    padding: 1rem 1rem 1rem 0;
+  &__item {
+    padding: 1rem 0;
     border-bottom: 1px solid #eee;
+    background: transparent;
   }
 
-  &__heading {
+  &__question {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    color: hsl(240, 6%, 50%);
-    font-size: 18px;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: #4a4b5e;
+
+    &:hover {
+      color: hsl(14, 88%, 65%);
+    }
   }
 
-  &__description {
-    max-height: 0;
-    overflow: hidden;
+  &__question.open {
+    font-weight: 700;
+    color: #1d1e35;
+  }
+
+  &__arrow {
+    margin-left: auto;
+    transition: 150ms;
+  }
+
+  &__arrow.open {
+    transform: rotate(180deg);
+  }
+
+  &__answer {
+    display: none;
+  }
+
+  &__answer.open {
+    display: block;
+    padding: 0.7rem 0;
+    font-size: 14px;
+    color: #787887;
+  }
+}
+
+@keyframes updown {
+  from {
+    -webkit-transform: translateY(1.875em);
+    transform: translateY(1.875em);
+  }
+  to {
+    -webkit-transform: translateY(0.938em);
+    transform: translateY(0.938em);
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    flex-direction: column;
+    width: 20.625em;
+    height: 33.75em;
+    padding: 1.563em;
+    border-radius: 1.563em;
+  }
+
+  .illustration {
+    height: 13.438em;
+    width: 15.313em;
+    position: absolute;
+    background-color: transparent;
+    transform: translateY(-62%); 
+    background-image: url(../images/illustration-woman-online-mobile.svg), url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: -1.688em, 0;
+    background-position-y: 0, 6.563em;
+
+    &__box {
+      display: none;
+    }
+  }
+
+  .accordion {
+    width: 100%;
+    margin-top:6.5rem;
+
+    &__title {
+      text-align: center;
+      font-size:1.8rem;
+    }
+
+    &__question {
+      font-size: 14px;
+    }
   }
 }
