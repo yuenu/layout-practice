@@ -24,6 +24,8 @@
 
 [profile-card](https://yuenu.github.io/layout-practice/homepage/component/profile-card-component-main/)
 
+[Bill-calculator](https://yuenu.github.io/layout-practice/homepage/component/tip-calculator-app-main/)
+
 ## Other
 
 [Drawing](https://yuenu.github.io/layout-practice/medium/10-JavaScript-in-10-hours/drawing/)
@@ -31,7 +33,6 @@
 [Password-generator](https://yuenu.github.io/layout-practice/medium/10-JavaScript-in-10-hours/password-generator/)
 
 [Quiz](https://yuenu.github.io/layout-practice/medium/10-JavaScript-in-10-hours/quiz/)
-
 
 [Weather-app](https://yuenu.github.io/layout-practice/medium/10-JavaScript-in-10-hours/weather-app/)
 
