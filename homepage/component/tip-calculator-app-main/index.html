@@ -45,7 +45,7 @@
               <button class="tip-btn" value="15">15%</button>
               <button class="tip-btn" value="25">25%</button>
               <button class="tip-btn" value="50">50%</button>
-              <input type="number" placeholder="Custom" max="100" min="0" />
+              <input type="number" placeholder="Custom" max="100" min="0" v-model="customTip" />
             </div>
           </div>
           <div class="number-of-people">
@@ -58,12 +58,12 @@
           <div class="result">
             <div class="result-item">
               <div class="result-heading">Tip Amount <span>/ person</span></div>
-              <span class="result-amount">$0.00</span>
+              <span class="result-amount" id="tipAmount">$0.00</span>
             </div>
 
             <div class="result-item">
               <div class="result-heading">Total <span>/ person</span></div>
-              <span id="total" class="result-amount" v-model="total" value="0">$0.00</span>
+              <span id="total" class="result-amount">$0.00</span>
             </div>
             <button class="reset-btn">Reset</button>
           </div>
