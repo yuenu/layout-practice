@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass component/tip-calculator-app-main/styles/main.scss component/tip-calculator-app-main/styles/main.css -w"
+    "watch:sass": "node-sass component/four-card-feature-section-master/styles/main.scss component/four-card-feature-section-master/styles/main.css -w"
   },
   "keywords": [],
   "author": "",
