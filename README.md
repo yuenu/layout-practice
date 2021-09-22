@@ -44,6 +44,52 @@
 
 [Animation-home-page](https://yuenu.github.io/layout-practice/medium/Animation-home-page/)
 
+[Bubble-animatied-homepage](https://yuenu.github.io/layout-practice/medium/Bubble-animatied-homepage/)
+
+[Client-side-Form-Validation](https://yuenu.github.io/layout-practice/medium/Client-side-Form-Validation/)
+
+[dog-slide-API](https://yuenu.github.io/layout-practice/medium/dog-slide-API/)
+
+[GlassCardBank](https://yuenu.github.io/layout-practice/medium/GlassCardBank/)
+
+[Glassmorphism](https://yuenu.github.io/layout-practice/medium/Glassmorphism/)
+
+[Hamburger-Menu](https://yuenu.github.io/layout-practice/medium/Hamburger-Menu/)
+
+[Hamburger-menu-rwd](https://yuenu.github.io/layout-practice/medium/Hamburger-menu-rwd/)
+
+[Image-Password-Strength-Effect](https://yuenu.github.io/layout-practice/medium/Image-Password-Strength-Effect/)
+
+[Image-Pop-Up](https://yuenu.github.io/layout-practice/medium/Image-Pop-Up/)
+
+[loading](https://yuenu.github.io/layout-practice/medium/loading/)
+
+[Micro-interation-Button](https://yuenu.github.io/layout-practice/medium/Micro-interation-Button/)
+
+[Navigation-animated-RWD](https://yuenu.github.io/layout-practice/medium/Navigation-animated-RWD/)
+
+[Navigation-Bar](https://yuenu.github.io/layout-practice/medium/Navigation-Bar/)
+
+[Navigation-RWD](https://yuenu.github.io/layout-practice/medium/Navigation-RWD/)
+
+[Page-animations](https://yuenu.github.io/layout-practice/medium/Page-animations/)
+
+[Parallax](https://yuenu.github.io/layout-practice/medium/Parallax/)
+
+[pre-loader](https://yuenu.github.io/layout-practice/medium/pre-loader/)
+
+[Product-Image-Slider](https://yuenu.github.io/layout-practice/medium/Product-Image-Slider/)
+
+[Progress-bar](https://yuenu.github.io/layout-practice/medium/Progress-bar/)
+
+[Recipe](https://yuenu.github.io/layout-practice/medium/Recipe/)
+
+[smooth-page-transitions](https://yuenu.github.io/layout-practice/medium/smooth-page-transitions/)
+
+[ToDoList](https://yuenu.github.io/layout-practice/medium/ToDoList/)
+
+[Typewriting-effect](https://yuenu.github.io/layout-practice/medium/Typewriting-effect/)
+
 ## 金魚系列
 
 [002-互動圖文卡片](https://yuenu.github.io/layout-practice/medium/AMOS/002-%E4%BA%92%E5%8B%95%E5%9C%96%E6%96%87%E5%8D%A1%E7%89%87/)
