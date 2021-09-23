@@ -70,7 +70,7 @@ main {
   max-width: 1200px;
   gap: 2rem;
   width: 100%;
-      grid-template-areas: ".  b  ." "a  b  d" "a  c  d" ".  c  .";
+      grid-template-areas: ".  b  ." "a  b  d" "a  c  d" ".  c  .";
 }
 
 .card {
@@ -161,7 +161,7 @@ main {
   .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "a" "b" "c" "d";
+        grid-template-areas: "a" "b" "c" "d";
   }
   main {
     gap: 5rem;
