@@ -220,6 +220,11 @@ input {
     font-size: 36px;
     font-weight: 700;
     color: var(--primary-color);
+    max-width:140px;
+    overflow:scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
