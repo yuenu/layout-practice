@@ -170,7 +170,7 @@ body {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1050px) {
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
