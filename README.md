@@ -2,13 +2,13 @@
 
 ## Website
 
-[Website01 - Food](https://yuenu.github.io/layout-practice/homepage/website01/)
+[Website01 - Food](https://yuenu.github.io/layout-practice/frontendmentor/website01/)
 
-[Website02 - Blog](https://yuenu.github.io/layout-practice/homepage/website02/)
+[Website02 - Blog](https://yuenu.github.io/layout-practice/frontendmentor/website02/)
 
-[Website03 - Social Media Dashboard](https://yuenu.github.io/layout-practice/homepage/website03/)
+[Website03 - Social Media Dashboard](https://yuenu.github.io/layout-practice/frontendmentor/website03/)
 
-[Website04 - Fundraising](https://yuenu.github.io/layout-practice/homepage/website04/)
+[Website04 - Fundraising](https://yuenu.github.io/layout-practice/frontendmentor/website04/)
 
 [Website05 - candy](https://yuenu.github.io/layout-practice/bootstrap/candy/)
 
@@ -20,15 +20,15 @@
 
 ## Component
 
-[FAQ-Accordion](https://yuenu.github.io/layout-practice/homepage/component/FAQ-component/)
+[FAQ-Accordion](https://yuenu.github.io/layout-practice/frontendmentor/component/FAQ-component/)
 
-[profile-card](https://yuenu.github.io/layout-practice/homepage/component/profile-card-component-main/)
+[profile-card](https://yuenu.github.io/layout-practice/frontendmentor/component/profile-card-component-main/)
 
-[tip-calculator-app](https://yuenu.github.io/layout-practice/homepage/component/tip-calculator-app-main/)
+[tip-calculator-app](https://yuenu.github.io/layout-practice/frontendmentor/component/tip-calculator-app-main/)
 
-[four-card-feature-section-master](https://yuenu.github.io/layout-practice/homepage/component/four-card-feature-section-master/)
+[four-card-feature-section-master](https://yuenu.github.io/layout-practice/frontendmentor/component/four-card-feature-section-master/)
 
-[time-tracking-dashboard-main](https://yuenu.github.io/layout-practice/homepage/component/time-tracking-dashboard-main/)
+[time-tracking-dashboard-main](https://yuenu.github.io/layout-practice/frontendmentor/component/time-tracking-dashboard-main/)
 
 ## Other
 
@@ -46,7 +46,7 @@
 
 [Animation-home-page](https://yuenu.github.io/layout-practice/medium/Animation-home-page/)
 
-[Bubble-animatied-homepage](https://yuenu.github.io/layout-practice/medium/Bubble-animatied-homepage/)
+[Bubble-animatied-frontendmentor](https://yuenu.github.io/layout-practice/medium/Bubble-animatied-frontendmentor/)
 
 [Client-side-Form-Validation](https://yuenu.github.io/layout-practice/medium/Client-side-Form-Validation/)
 
