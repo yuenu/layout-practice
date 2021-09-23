@@ -1,9 +1,7 @@
-// let theme = localStorage.getItem('theme')
-
 let themeControl = document.getElementById('theme-control')
-
+let themeStyle = document.getElementById('theme-style')
+themeStyle.href="./assets/main.css"
 themeControl.addEventListener('change', function() {
-  let themeStyle = document.getElementById('theme-style')
   if(this.checked) {
     themeStyle.href="./assets/default.css"
   } else {
