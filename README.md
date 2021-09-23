@@ -24,9 +24,11 @@
 
 [profile-card](https://yuenu.github.io/layout-practice/homepage/component/profile-card-component-main/)
 
-[Bill-calculator](https://yuenu.github.io/layout-practice/homepage/component/tip-calculator-app-main/)
+[tip-calculator-app](https://yuenu.github.io/layout-practice/homepage/component/tip-calculator-app-main/)
 
 [four-card-feature-section-master](https://yuenu.github.io/layout-practice/homepage/component/four-card-feature-section-master/)
+
+[time-tracking-dashboard-main](https://yuenu.github.io/layout-practice/homepage/component/time-tracking-dashboard-main/)
 
 ## Other
 

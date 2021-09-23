@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass component/four-card-feature-section-master/styles/main.scss component/four-card-feature-section-master/styles/main.css -w"
+    "watch:sass": "node-sass component/time-tracking-dashboard-main/styles/main.scss component/time-tracking-dashboard-main/styles/main.css -w"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="dashboard">
+        <div class="user">
+          <div class="user__info">
+            <picture class="user__avator">
+              <img src="./images/image-jeremy.png" alt="user-avator" />
+            </picture>
+            <div class="user__name">
+              <small>Report for</small>
+              <span>Jeremy Robson</span>
+            </div>
+          </div>
+
+          <div class="user__controls">
+            <button class="user__control" data-type="daily">Daily</button>
+            <button class="user__control active" data-type="weekly">Weekly</button>
+            <button class="user__control" data-type="monthly">Monthly</button>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card__background"></div>
+            <div class="card__wrapper">
+              <h3 class="card__heading">
+                <span>Work</span>
+                <div class="icon__ellipsis"></div>
+              </h3>
+              <div class="card__content"></div>
+              <footer class="card__footer"></footer>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__background"></div>
+            <div class="card__wrapper">
+              <h3 class="card__heading">
+                <span>Play</span>
+                <div class="icon__ellipsis"></div>
+              </h3>
+              <div class="card__content"></div>
+              <footer class="card__footer"></footer>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__background"></div>
+            <div class="card__wrapper">
+              <h3 class="card__heading">
+                <span>Study</span>
+                <div class="icon__ellipsis"></div>
+              </h3>
+              <div class="card__content"></div>
+              <footer class="card__footer"></footer>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__background"></div>
+            <div class="card__wrapper">
+              <h3 class="card__heading">
+                <span>Exercise</span>
+                <div class="icon__ellipsis"></div>
+              </h3>
+              <div class="card__content"></div>
+              <footer class="card__footer"></footer>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__background"></div>
+            <div class="card__wrapper">
+              <h3 class="card__heading">
+                <span>Social</span>
+                <div class="icon__ellipsis"></div>
+              </h3>
+              <div class="card__content"></div>
+              <footer class="card__footer"></footer>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__background"></div>
+            <div class="card__wrapper">
+              <h3 class="card__heading">
+                <span>Self Care</span>
+                <div class="icon__ellipsis"></div>
+              </h3>
+              <div class="card__content"></div>
+              <footer class="card__footer"></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/yuenu">yuenu</a>.
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
