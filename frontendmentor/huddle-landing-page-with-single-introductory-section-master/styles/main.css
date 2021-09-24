@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --primary-purple: #674baf;
+  --primary-pink: #e882e8;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(../images/bg-desktop.svg) no-repeat, var(--primary-purple);
+  background-size: 100%;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  padding-top: 3rem;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 180px;
+}
+
+.feature-pic {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.feature-pic img {
+  width: 100%;
+}
+
+.feature-text {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.6rem;
+  line-height: 1.6;
+}
+
+.description {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.cta-btn {
+  background-color: #ffffff;
+  color: var(--primary-purple);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: 0;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.cta-btn:hover {
+  background-color: var(--primary-pink);
+  color: #ffffff;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.cta-btn:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  background-color: var(--primary-pink);
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 14px;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  padding-bottom: 2rem;
+}
+
+.social-links a {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 36px;
+  width: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-links a:hover {
+  border-color: var(--primary-pink);
+}
+
+.social-links a:hover svg {
+  fill: var(--primary-pink);
+}
+
+.social-links a svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feature-pic img {
+    max-width: 600px;
+    width: 100%;
+  }
+  .feature-text {
+    text-align: center;
+    gap: 1.2rem;
+  }
+  .heading {
+    font-size: 1.6rem;
+  }
+  .cta-btn {
+    margin: 0 auto;
+  }
+  .social-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 765px) {
+  body {
+    background: url(../images/bg-mobile.svg) no-repeat, var(--primary-purple);
+    background-position: 50% 0%;
+    background-size: 100%;
+    padding: 0 1.6rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
