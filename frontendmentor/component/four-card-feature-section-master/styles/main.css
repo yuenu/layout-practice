@@ -159,9 +159,12 @@ main {
 
 @media (max-width: 1240px) {
   .container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "a" "b" "c" "d";
+    max-width: 670px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "a b" "c d";
   }
   main {
     gap: 5rem;
@@ -187,6 +190,14 @@ main {
         justify-self: center;
     max-width: 330px;
     padding: 2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "a" "b" "c" "d";
   }
 }
 /*# sourceMappingURL=main.css.map */
