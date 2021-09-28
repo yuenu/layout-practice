@@ -15,12 +15,12 @@
 
 body {
   background: url(../images/bg-desktop.svg) no-repeat, var(--primary-purple);
-  background-size: 100%;
+  background-size: cover;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  max-width: 1280px;
+  // max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,7 +32,7 @@ header {
 
 main {
   flex: 1;
-  padding-top: 5rem;
+  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,7 +40,8 @@ main {
 
 .container {
   display: flex;
-  gap: 3rem;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
 .logo img {
@@ -53,26 +54,30 @@ main {
 
   img {
     width: 100%;
+    max-width: 880px;
   }
 }
 
 .feature-text {
+  padding-top: 3.3rem;
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .heading {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   line-height: 1.6;
+  letter-spacing: 1.1px;
+  margin-bottom: 1.6rem;
 }
 
 .description {
   color: #ffffff;
   font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .cta-btn {
@@ -80,13 +85,13 @@ main {
   color: var(--primary-purple);
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border: 0;
-  width: 12rem;
-  height: 3rem;
+  width: 13rem;
+  height: 3.6rem;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5%);
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.3%);
   transition: 150ms;
   transform: translateY(0px);
 
@@ -140,6 +145,7 @@ main {
   .container {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
 
   .feature-pic img {
@@ -148,8 +154,9 @@ main {
   }
 
   .feature-text {
+    max-width: 600px;
     text-align: center;
-    gap:1.2rem;
+    gap: 1.2rem;
   }
 
   .heading {
@@ -162,7 +169,7 @@ main {
 
   .social-links {
     justify-content: center;
-    padding-top:5rem;
+    padding-top: 5rem;
   }
 }
 
@@ -170,7 +177,34 @@ main {
   body {
     background: url(../images/bg-mobile.svg) no-repeat, var(--primary-purple);
     background-position: 50% 0%;
-    background-size: 100%;
-    padding: 0 1.6rem;
+    background-size: 102%;
+  }
+
+  header {
+    padding-top: 2rem;
+  }
+
+  .logo img {
+    max-width: 150px;
+  }
+
+  main {
+    padding-top: 3.5rem;
+  }
+
+  .feature-pic img {
+    max-width: 600px;
+    padding: 0 0.5rem;
+  }
+
+  .heading {
+    padding: 0 0.5rem;
+  }
+
+  .cta-btn {
+    width: 14rem;
+    height: 2.8rem;
+    font-size: 0.85rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3%);
   }
 }
