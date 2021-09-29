@@ -30,6 +30,10 @@
 
 [time-tracking-dashboard-main](https://yuenu.github.io/layout-practice/frontendmentor/component/time-tracking-dashboard-main/)
 
+[huddle-landing-page-with-single-introductory-section-master](https://yuenu.github.io/layout-practice/frontendmentor/huddle-landing-page-with-single-introductory-section-master/)
+
+[testimonials-grid-section-main](https://yuenu.github.io/layout-practice/frontendmentor/component/testimonials-grid-section-main/index.html)
+
 ## Other
 
 [Drawing](https://yuenu.github.io/layout-practice/medium/10-JavaScript-in-10-hours/drawing/)

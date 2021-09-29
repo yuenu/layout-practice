@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Repo](https://your-solution-url.com)
-- Live Site URL: [Live demo](https://your-live-site-url.com)
+- Solution URL: [Repo](https://github.com/yuenu/layout-practice/tree/main/frontendmentor/huddle-landing-page-with-single-introductory-section-master)
+- Live Site URL: [Live demo](https://yuenu.github.io/layout-practice/frontendmentor/huddle-landing-page-with-single-introductory-section-master/)
 
 ## My process
 
