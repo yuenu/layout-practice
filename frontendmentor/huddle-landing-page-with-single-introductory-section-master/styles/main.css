@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 :root {
   --primary-purple: #674baf;
   --primary-pink: #e882e8;
@@ -16,6 +17,7 @@
 body {
   background: url(../images/bg-desktop.svg) no-repeat, var(--primary-purple);
   background-size: cover;
+  background-position: 50% 67%;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   margin: 0 auto;
@@ -57,10 +59,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 5rem;
+  gap: 0rem;
 }
 
 .logo img {
@@ -69,19 +68,20 @@ main {
 }
 
 .feature-pic {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 54%;
 }
 
 .feature-pic img {
   width: 100%;
-  max-width: 880px;
+  max-width: 900px;
 }
 
 .feature-text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 2rem;
   padding-top: 3.3rem;
-  max-width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,12 +98,15 @@ main {
   line-height: 1.6;
   letter-spacing: 1.1px;
   margin-bottom: 1.6rem;
+  max-width: 500px;
 }
 
 .description {
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 2rem;
+  font-size: 1.1rem;
+  max-width: 550px;
 }
 
 .cta-btn {
@@ -114,7 +117,7 @@ main {
   font-size: 1.1rem;
   border: 0;
   width: 13rem;
-  height: 3.6rem;
+  height: 3.4rem;
   border-radius: 50px;
   cursor: pointer;
   -webkit-box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.3);
@@ -185,6 +188,9 @@ main {
 }
 
 @media (max-width: 1200px) {
+  main {
+    padding-top: 3.5rem;
+  }
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -195,6 +201,18 @@ main {
             align-items: center;
     gap: 2rem;
   }
+  .feature-pic {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .feature-pic img {
     max-width: 600px;
     width: 100%;
@@ -203,9 +221,15 @@ main {
     max-width: 600px;
     text-align: center;
     gap: 1.2rem;
+    padding-top: 1rem;
   }
   .heading {
     font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  .description {
+    padding: 0 0.7rem;
+    margin-bottom: 0.5rem;
   }
   .cta-btn {
     margin: 0 auto;
@@ -229,9 +253,6 @@ main {
   }
   .logo img {
     max-width: 150px;
-  }
-  main {
-    padding-top: 3.5rem;
   }
   .feature-pic img {
     max-width: 600px;
