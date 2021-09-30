@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="heading">
+        <h1>Our Pricing</h1>
+        <div class="plan">
+          <span>Annually</span>
+          <label class="toggle-control">
+            <input id="plan-control" type="checkbox" checked="true">
+            <span class="control"></span>
+          </label>
+          <span>Monthly</span>
+        </div>
+      </section>
+      <section class="content">
+        <div class="cards">
+          <div class="card" data-card="true">
+            <header class="card__header">
+              <div class="card__title">Basic</div>
+              <div class="card__price monthly"><span>&dollar;</span>19.99</div>
+              <div class="card__price annually" style="display: none">
+                <span>&dollar;</span>199.99
+              </div>
+            </header>
+            <ul class="card__body">
+              <li class="card__item">500 GB Storage</li>
+              <li class="card__item">2 Users Allowed</li>
+              <li class="card__item">Send up to 3 GB</li>
+            </ul>
+            <button class="card__btn">Learn More</button>
+          </div>
+
+          <div class="card selected" data-card="true" style="z-index:1;">
+            <header class="card__header">
+              <div class="card__title">Professional</div>
+              <div class="card__price monthly"><span>&dollar;</span>24.99</div>
+              <div class="card__price annually" style="display: none">
+                <span>&dollar;</span>249.99
+              </div>
+            </header>
+            <ul class="card__body">
+              <li class="card__item">1 TB Storage</li>
+              <li class="card__item">5 Users Allowed</li>
+              <li class="card__item">Send up to 10 GB</li>
+            </ul>
+            <button class="card__btn">Learn More</button>
+          </div>
+
+          <div class="card" data-card="true">
+            <header class="card__header">
+              <div class="card__title">Master</div>
+              <div class="card__price monthly"><span>&dollar;</span>39.99</div>
+              <div class="card__price annually" style="display: none">
+                <span>&dollar;</span>399.99
+              </div>
+            </header>
+            <ul class="card__body">
+              <li class="card__item">2 TB Storage</li>
+              <li class="card__item">10 Users Allowed</li>
+              <li class="card__item">Send up to 20 GB</li>
+            </ul>
+            <button class="card__btn">Learn More</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/yuenu">yuenu</a>.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

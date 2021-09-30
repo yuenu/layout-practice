@@ -34,6 +34,8 @@
 
 [testimonials-grid-section-main](https://yuenu.github.io/layout-practice/frontendmentor/component/testimonials-grid-section-main/index.html)
 
+[pricing-component-with-toggle-master](https://yuenu.github.io/layout-practice/frontendmentor/component/pricing-component-with-toggle-master/)
+
 ## Other
 
 [Drawing](https://yuenu.github.io/layout-practice/medium/10-JavaScript-in-10-hours/drawing/)
