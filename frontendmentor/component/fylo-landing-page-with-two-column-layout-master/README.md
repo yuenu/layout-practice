@@ -47,6 +47,22 @@ Users should be able to:
 - Flexbox
 - Desktop-first workflow
 
+
+### What I learned
+
+I use [min()](https://developer.mozilla.org/en-US/docs/Web/CSS/min()) to responsive different screen size 
+
+But when I apply my scss file, it happens compile wrong
+
+`Internal Error: Incompatible units: 'px' and '%'.`
+
+so I found the [issue](https://github.com/sass/node-sass/issues/2815) on github, and i add calc before min
+
+```css
+width: calc(min(90%, 1400px));
+```
+
+
 ## Author
 
 - Website - [yuenu](https://yuenu.github.io/profile/)
