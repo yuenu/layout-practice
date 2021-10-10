@@ -97,17 +97,33 @@ main {
     padding: 0.8rem;
   }
 
+  &__box {
+    display: flex;
+    width: 41.8rem;
+    gap: 1rem;
+    transform: translateX(-21.4rem);
+    transition: 200ms;
+    height: 39.4rem;
+  }
+
   &__wrapper {
+    flex-grow: 1;
+    width: 20.4rem;
     overflow: hidden;
     border-radius: 30px;
     height: 100%;
     background-color: hsl(270, 20%, 96%);
+  }
+
+  &__message {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__header {
+  &__header,
+  &__contact-header {
     height: 6rem;
     padding: 1rem 1.2rem;
     background-image: linear-gradient(
@@ -173,9 +189,10 @@ main {
   &__more {
     position: relative;
     bottom: 8px;
+    cursor: pointer;
 
     svg {
-      cursor: pointer;
+      pointer-events: none;
       width: 15px;
       height: 15px;
       fill: #ffffff;
@@ -226,11 +243,28 @@ main {
   .more.active {
     display: block;
     list-style-type: none;
-    position:absolute;
-    background-color:var(--color-white);
-    bottom:-3rem;
-    left:-3rem;
-    max-width:200px;
+    position: absolute;
+    background-color: var(--color-white);
+    top: 30px;
+    right: 0px;
+    width: 150px;
+    padding: 10px;
+
+    a {
+      display: inline-block;
+      padding: 10px;
+      width: 100%;
+      text-decoration: none;
+      color: var(--color-heading);
+      transition: 200ms;
+
+      &:hover {
+        background-color: #eee;
+      }
+      &:active {
+        background-color: #ddd;
+      }
+    }
   }
 
   &__body {
@@ -242,6 +276,24 @@ main {
     font-weight: 400;
     height: 460px;
     overflow: auto;
+    transition: all 200ms ease;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: whitesmoke;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+      background-color: #ddd;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: whitesmoke;
+    }
 
     img {
       max-width: 3.2rem;
@@ -416,6 +468,133 @@ main {
       &::after {
         transform: translate(-4px, 1.4px) rotate(-45deg);
       }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+      font-size:1.2rem;
+      color: var(--color-white);
+      background-image: linear-gradient(to right, #9fcfe4, #e7c7a4);
+    }
+
+    &-body {
+      height: calc(41rem - 1.6rem - 6rem);
+      padding: 10px 20px;
+      display:flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+    &-provider {
+      
+      border-bottom: 2px solid rgb(231, 231, 231);
+
+      label {
+        margin-top:5px;
+        color:#bbb;
+        font-size:14px;
+        font-weight:700;
+      }
+    }
+
+    &-provider-list {
+      padding: 10px 20px 20px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      list-style-type: none;
+      
+      li {
+        cursor: pointer;
+        padding: 10px;
+        border-radius:5px;
+        transition: 200ms;
+
+        &:hover {
+          background-color: rgb(223, 223, 223);
+        }
+      }
+      
+      img {
+        width:54px;
+        height:54px;
+        object-fit: cover;
+        border-radius:50%;
+      }
+
+      h6 {
+        font-weight:700;
+        text-align: center;
+        margin-top:5px;
+      }
+    }
+
+    &-message {
+      padding:1rem 0;
+
+      li {
+        padding:10px;
+        display:flex;
+        gap:15px;
+        position:relative;
+        cursor: pointer;
+        border-radius:8px;
+
+        &:hover {
+          background-color: rgb(223, 223, 223);
+        }
+
+        &::before {
+          content:'';
+          width:10px;
+          height:10px;
+          background: green;
+          position:absolute;
+          bottom:12px;
+          left:48px;
+          border-radius:50%;
+          outline: 2px solid #f5f3f7;
+        }
+      }
+
+      img {
+        width:54px;
+        height:54px;
+        object-fit: cover;
+        border-radius:50%;
+      }
+    }
+
+    &-message-content {
+      display:flex;
+      flex:1;
+      flex-direction: column;
+      justify-content: space-around;
+      padding:4px 0;
+    }
+
+    &-message-title{
+      font-weight:700;
+      font-size:1rem;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        font-weight: 400;
+        font-size:0.7rem;
+        color:var(--color-heading);
+      }
+    }
+
+    &-message-description{
+      font-size:12px;
+      font-style:italic;
+      color:#bbb;
     }
   }
 }
