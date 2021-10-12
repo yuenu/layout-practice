@@ -1,0 +1,91 @@
+{
+  "user": {
+    "samuel": {
+      "name": "Samuel Green",
+      "avatar": "./images/avatar.jpg",
+      "messages": [
+        {
+          "type": "text",
+          "message": "receive",
+          "content": "That sounds great. I’d be happy with that."
+        },
+        {
+          "type": "text",
+          "message": "receive",
+          "content": "Could you send over some pictures of your dog, please?"
+        },
+        {
+          "type": "media",
+          "message": "sent",
+          "content": [
+            "./images/dog-image-1.jpg",
+            "./images/dog-image-2.jpg",
+            "./images/dog-image-3.jpg"
+          ]
+        },
+        {
+          "type": "text",
+          "message": "sent",
+          "content": "Here are a few pictures. She’s a happy girl!"
+        },
+        {
+          "type": "text",
+          "message": "sent",
+          "content": "Can you make it?"
+        },
+        {
+          "type": "text",
+          "message": "receive",
+          "content": "She looks so happy! The time we discussed works. How long shall I take her out for?"
+        },
+        {
+          "type": "offer",
+          "message": "receive",
+          "content": {
+            "text": "30 minute walk",
+            "pirce": 29
+          }
+        },
+        {
+          "type": "offer",
+          "message": "receive",
+          "content": {
+            "text": "1 hour walk",
+            "pirce": 49
+          }
+        }
+      ]
+    },
+    "mary": {
+      "name": "Mary key",
+      "avatar": "./images/provider-2.webp",
+      "messages": [
+        {
+          "type": "text",
+          "message": "receive",
+          "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+        },
+        {
+          "type": "text",
+          "message": "sent",
+          "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+          "type": "text",
+          "message": "sent",
+          "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+          "type": "text",
+          "message": "receive",
+          "content": "Thank you so mush!!"
+        },
+        {
+          "type": "text",
+          "message": "sent",
+          "content": "Thank you 💓💓💓"
+        }
+      ]
+    }
+  }
+}
