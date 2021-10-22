@@ -729,9 +729,11 @@ main {
 
   .heading {
     text-align: center;
+    font-size: 2.55rem;
 
     &__description {
       max-width: 300px;
+      font-size: 1rem;
     }
   }
 }
