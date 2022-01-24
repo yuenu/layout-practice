@@ -38,6 +38,8 @@
 
 ## Other
 
+[Bubble-animation](https://yuenu.github.io/layout-practice/medium/Bubble-animatied-homepage/)
+
 [Drawing](https://yuenu.github.io/layout-practice/medium/10-JavaScript-in-10-hours/drawing/)
 
 [Password-generator](https://yuenu.github.io/layout-practice/medium/10-JavaScript-in-10-hours/password-generator/)
