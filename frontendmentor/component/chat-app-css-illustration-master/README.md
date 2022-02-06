@@ -1,6 +1,6 @@
 # Frontend Mentor - Chat app CSS illustration solution
 
-This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -12,9 +12,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -31,14 +29,14 @@ Users should be able to:
 
 ![screenshot](./images/screenshot.png)
 
-***Mobile***
+**_Mobile_**
 
 ![screenshot-mobile](./images/screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Repo](https://your-solution-url.com)
-- Live Site URL: [Live demo](https://your-live-site-url.com)
+- Solution URL: [Repo](https://github.com/yuenu/layout-practice/tree/main/frontendmentor/component/chat-app-css-illustration-master#author)
+- Live Site URL: [Live demo](https://yuenu.github.io/layout-practice/frontendmentor/component/chat-app-css-illustration-master/)
 
 ## My process
 
@@ -50,7 +48,6 @@ Users should be able to:
 - Destop-first workflow
 - Vanilla.js
 
-
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
@@ -58,26 +55,25 @@ Users should be able to:
 When user sent message, and the message add to the body automatic scroll to bottom
 
 ```js
-textBody.scrollTop = textBody.scrollHeight
+textBody.scrollTop = textBody.scrollHeight;
 ```
 
 [Node.contains()](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains)
 
-
 ```js
-node.contains( otherNode )
+node.contains(otherNode);
 ```
 
 ### Continued development
 
 There are some bug need to fix
-- [ ] When user submit message,if return to the home page, 
-- [ ] 
-- [ ] 
-- [ ] 
+
+- [ ] When user submit message,if return to the home page,
+- [ ]
+- [ ]
+- [ ]
 
 ## Author
-
 
 - Website - [yuenu](https://yuenu.github.io/profile/)
 - Frontend Mentor - [@yuenu](https://www.frontendmentor.io/profile/yuenu)
