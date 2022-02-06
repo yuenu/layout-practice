@@ -20,6 +20,8 @@
 
 ## Component
 
+[chat-app](https://yuenu.github.io/layout-practice/frontendmentor/component/chat-app-css-illustration-master/)
+
 [FAQ-Accordion](https://yuenu.github.io/layout-practice/frontendmentor/component/FAQ-component/)
 
 [profile-card](https://yuenu.github.io/layout-practice/frontendmentor/component/profile-card-component-main/)
