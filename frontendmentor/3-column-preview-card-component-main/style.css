@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+	--orange: hsl(31, 77%, 52%);
+	--cyan: hsl(184, 100%, 22%);
+	--dark-cyan: hsl(179, 100%, 13%);
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: "Lexend Deca", sans-serif;
+	min-height: 100vh;
+}
+
+main {
+	height: calc(100vh - 15px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.card {
+	padding: 40px;
+	max-width: 280px;
+}
+
+.card:nth-child(1) {
+	background: var(--orange);
+}
+
+.card:nth-child(2) {
+	background: var(--cyan);
+}
+
+.card:nth-child(3) {
+	background: var(--dark-cyan);
+}
+
+.card-icon {
+	margin-bottom: 20px;
+}
+
+.card-icon img {
+	width: 50px;
+}
+
+.card-heading {
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+	font-family: "Big Shoulders Display", cursive;
+}
+
+.card-description {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 14px;
+	margin-bottom: 80px;
+	padding-right: 25px;
+	line-height: 1.6;
+}
+
+.card-button {
+	border: 0;
+	padding: 11px 28px;
+	border-radius: 50px;
+	background: #fff;
+	font-weight: 700;
+	border: 2px solid #fff;
+	transition: 150ms;
+	cursor: pointer;
+}
+
+.card:nth-child(1) .card-button {
+	color: var(--orange);
+}
+
+.card:nth-child(2) .card-button {
+	color: var(--cyan);
+}
+
+.card:nth-child(3) .card-button {
+	color: var(--dark-cyan);
+}
+
+.card-button:hover {
+	background: transparent;
+}
+
+.card .card-button:hover {
+	color: #fff;
+}
+
+@media (max-width: 876px) {
+	main {
+		padding: 20px;
+		height: auto;
+	}
+
+	.card {
+		padding: 40px;
+		max-width: 300px;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	.card-description {
+		margin-bottom: 24px;
+		padding-right: 0;
+	}
+}
