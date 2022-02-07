@@ -20,6 +20,8 @@
 
 ## Component
 
+[3-column-preview-card-component-main](https://yuenu.github.io/layout-practice/frontendmentor/3-column-preview-card-component-main/)
+
 [chat-app](https://yuenu.github.io/layout-practice/frontendmentor/component/chat-app-css-illustration-master/)
 
 [FAQ-Accordion](https://yuenu.github.io/layout-practice/frontendmentor/component/FAQ-component/)
