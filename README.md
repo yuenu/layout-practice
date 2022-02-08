@@ -20,6 +20,8 @@
 
 ## Component
 
+[sunnyside-agency-landing-page-main](https://yuenu.github.io/layout-practice/frontendmentor/sunnyside-agency-landing-page-main/)
+
 [3-column-preview-card-component-main](https://yuenu.github.io/layout-practice/frontendmentor/3-column-preview-card-component-main/)
 
 [chat-app](https://yuenu.github.io/layout-practice/frontendmentor/component/chat-app-css-illustration-master/)
