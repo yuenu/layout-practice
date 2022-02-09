@@ -20,6 +20,8 @@
 
 ## Component
 
+[order-summary-component-main](https://yuenu.github.io/layout-practice/frontendmentor/order-summary-component-main/)
+
 [sunnyside-agency-landing-page-main](https://yuenu.github.io/layout-practice/frontendmentor/sunnyside-agency-landing-page-main/)
 
 [3-column-preview-card-component-main](https://yuenu.github.io/layout-practice/frontendmentor/3-column-preview-card-component-main/)
