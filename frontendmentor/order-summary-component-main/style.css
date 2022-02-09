@@ -141,6 +141,10 @@ main {
   transition: 300ms;
 }
 
+.process-submit:hover button {
+  opacity: 0.6;
+}
+
 /* process section END */
 
 .container {
