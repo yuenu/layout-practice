@@ -1,5 +1,8 @@
 # Layout Practice
 
+### If you like this repository, please give me a star, thank you
+### 如果你喜歡這個專案，請右上角star，謝謝
+
 ## Website
 
 [Website01 - Food](https://yuenu.github.io/layout-practice/frontendmentor/website01/)
