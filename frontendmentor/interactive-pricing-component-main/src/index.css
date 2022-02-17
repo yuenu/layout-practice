@@ -2,10 +2,169 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --toggle-background-color-on: #aaa;
+  --toggle-background-color-off: #aaa;
+  --toggle-control-on-color: blue;
+  --toggle-control-off-color: blue;
+  --toggle-width: 50px;
+  --toggle-height: 28px;
+  --toggle-gutter: 5px;
+  --toggle-radius: 50%;
+  --toggle-control-speed: 0.15s;
+  --toggle-control-ease: ease-in;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background: hsl(225, 100%, 94%);
+  background-image: url(./assets/bg-pattern.svg);
+  background-repeat: no-repeat;
+}
+
+/* Input range START*/
+/* .range {
+  position: relative;
+  width: 100%;
+  height: 17px;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  background: #eee;
+  transition: linear 0.5s;
+  outline: 0;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 40px;
+  -webkit-appearance: none;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 0px #0fdac6;
+  z-index: 2;
+  position: relative;
+  margin-left: 3px;
+  margin-top: -3px;
+  background: #0fdac6 url('./assets/icon-slider.svg') no-repeat center;
+} */
+
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #aeb3cb;
+  border-radius: 999px;
+  background-image: linear-gradient(#aaede6, #aaede6);
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative; /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+  width: 40px;
+  height: 40px;
+  background: #0fdac6 url('./assets/icon-slider.svg') no-repeat center;
+  box-shadow: 0 10px 20px #0fdac6;
+  border-radius: 50%;
+  transition: 0.2s; /* 點選放大時候的漸變時間 */
+}
+
+input[type='range']:active::-webkit-slider-thumb {
+  box-shadow: 0 0px 50px rgba(15, 218, 198, 1);
+}
+
+input[type='range']::-webkit-slider-thumb:before,
+input[type='range']::-webkit-slider-thumb:after {
+  position: absolute;
+  top: 3px;
+  width: 2000px; /* 長度很長沒關係，因為剛剛有用 overflow:hidden 了 */
+  height: 4px;
+  content: '';
+  pointer-events: none; /* 讓滑鼠可以點擊穿透偽元素，不然會點不到下面 */
+  transition: 0.2s;
+}
+
+input[type='range']::-webkit-slider-thumb:before {
+  left: -1997px;
+  background: #f22;
+}
+input[type='range']::-webkit-slider-thumb:after {
+  left: 10px;
+  background: #edc;
+}
+
+/* Input range END*/
+
+/* checkbox - START */
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-control input:checked ~ .control {
+  background: hsl(224, 23%, 55%);
+}
+
+.toggle-control input:checked ~ .control:after {
+  left: 27px;
+  background: white;
+}
+
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 50px;
+  border-radius: 14px;
+  background-color: #aeb3cb;
+  transition: background-color 0.15s ease-in;
+}
+
+.toggle-control .control:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 14px;
+  background: white;
+  -webkit-transition: left 0.15s ease-in;
+  transition: left 0.15s ease-in;
+}
+/* checkbox - END */
+
 .attribution {
-	font-size: 11px;
-	text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
