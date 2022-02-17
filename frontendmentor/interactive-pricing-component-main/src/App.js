@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Icon from './components/Icon'
 
 const Header = () => {
@@ -30,6 +30,7 @@ const ContainerTop = () => {
 
   useEffect(() => {
     if (plan === 'month') setPrice(16)
+    else setPrice(190)
   }, [plan])
 
   return (
@@ -37,26 +38,32 @@ const ContainerTop = () => {
       <div className="flex justify-between items-center text-cblue-300 font-semibold">
         <div>100K Pageviews</div>
         <div>
-          <span className="text-cblue-400 text-4xl">${price}.00</span>/{plan}
+          <span className="text-cblue-400 text-4xl">${price.toFixed(2)}</span>/
+          {plan}
         </div>
       </div>
-      <ProgressBar progress={price} />
-      <Plan setPlan={setPlan} setProgress={setPrice} />
+      <ProgressBar progress={price} setProgress={setPrice} plan={plan} />
+      <Plan setPlan={setPlan} />
     </div>
   )
 }
 
-const ProgressBar = ({ progress, setProgress }) => {
+const ProgressBar = ({ plan, progress, setProgress }) => {
+  // const [count, setCount] = useState(6)
   return (
     <div className="range">
       <input
         className="w-full"
         type="range"
         min="0"
-        max="32"
-        step="1"
+        max={plan === 'month' ? 32 : 380}
+        step={plan === 'month' ? 2 : 23.75}
         value={progress}
-        style={{ backgroundSize: progress + '%' }}
+        style={{
+          backgroundSize: `${
+            plan === 'month' ? (progress / 32) * 100 : (progress / 380) * 100
+          }%`,
+        }}
         onChange={(e) => setProgress(e.target.valueAsNumber)}
       />
     </div>
