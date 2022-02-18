@@ -1,14 +1,22 @@
 import { useState, useEffect } from 'react'
 import Icon from './components/Icon'
 
+function formatNumber(num) {
+  if (num > 999999) return `${(num / 1000000) | 0}M`
+  else if (num > 999) return `${(num / 1000) | 0}k`
+  else return num + ''
+}
+
 const Header = () => {
   return (
     <header
       id="header"
-      className="text-center gap-3 h-48 flex justify-center items-center flex-col font-semibold"
+      className="flex flex-col items-center justify-center h-48 gap-3 my-5 font-semibold text-center md:my-10 "
     >
-      <h1 className="text-3xl text-cblue-400">Simple, traffic-based pricing</h1>
-      <p className="text-cblue-300">
+      <h1 className="text-xl md:text-3xl text-cblue-400">
+        Simple, traffic-based pricing
+      </h1>
+      <p className="max-w-[230px] text-cblue-300">
         Sign-up for our 30-day trial. No credit card required.
       </p>
     </header>
@@ -17,7 +25,7 @@ const Header = () => {
 
 const Container = () => {
   return (
-    <div className="bg-white max-w-2xl w-full rounded-lg shadow-lg">
+    <div className="w-full max-w-2xl bg-white rounded-lg shadow-lg">
       <ContainerTop />
       <ContainerBottom />
     </div>
@@ -26,42 +34,62 @@ const Container = () => {
 
 const ContainerTop = () => {
   const [price, setPrice] = useState(16)
+  const [view, setView] = useState(100000)
   const [plan, setPlan] = useState('month')
 
   useEffect(() => {
-    if (plan === 'month') setPrice(16)
-    else setPrice(190)
+    if (plan === 'month') {
+      setPrice((prev) => (prev / 18) * 2)
+      setView((prev) => (prev / 18) * 2)
+    } else {
+      setPrice((prev) => (prev * 18) / 2)
+      setView((prev) => (prev * 18) / 2)
+    }
   }, [plan])
 
+  useEffect(() => {
+    setPrice(16)
+    setView(100000)
+  }, [])
+
+  useEffect(() => {
+    if (plan === 'month') {
+      setView((price / 32) * 100 * 2000)
+    } else {
+      setView((price / 288) * 100 * 2000)
+    }
+  }, [price, plan])
+
   return (
-    <div className="p-14 space-y-10 border-b">
-      <div className="flex justify-between items-center text-cblue-300 font-semibold">
-        <div>100K Pageviews</div>
-        <div>
-          <span className="text-cblue-400 text-4xl">${price.toFixed(2)}</span>/
+    <div className="py-10 space-y-10 border-b px-7 md:p-14">
+      <div className="flex flex-col items-center justify-between gap-8 font-semibold text-cblue-300 md:flex-row md:flex-wrap">
+        <div className="text-lg tracking-wider uppercase">
+          {formatNumber(view)} Pageviews
+        </div>
+        <div className="flex items-center order-3 text-lg tracking-wider md:order-1">
+          <span className="text-4xl text-cblue-400">${price.toFixed(2)}</span>/
           {plan}
         </div>
+        <ProgressBar progress={price} setProgress={setPrice} plan={plan} />
       </div>
-      <ProgressBar progress={price} setProgress={setPrice} plan={plan} />
       <Plan setPlan={setPlan} />
     </div>
   )
 }
 
 const ProgressBar = ({ plan, progress, setProgress }) => {
-  // const [count, setCount] = useState(6)
   return (
-    <div className="range">
+    <div className="order-2 w-full range">
       <input
         className="w-full"
         type="range"
-        min="0"
-        max={plan === 'month' ? 32 : 380}
-        step={plan === 'month' ? 2 : 23.75}
+        min={0}
+        max={plan === 'month' ? 32 : 288}
+        step={plan === 'month' ? 2 : 18}
         value={progress}
         style={{
           backgroundSize: `${
-            plan === 'month' ? (progress / 32) * 100 : (progress / 380) * 100
+            plan === 'month' ? (progress / 32) * 100 : (progress / 288) * 100
           }%`,
         }}
         onChange={(e) => setProgress(e.target.valueAsNumber)}
@@ -72,13 +100,16 @@ const ProgressBar = ({ plan, progress, setProgress }) => {
 
 const Plan = ({ setPlan }) => {
   return (
-    <div className="flex gap-4 mr-6 items-center text-cblue-300 justify-end">
+    <div className="flex items-center justify-end w-full gap-4 mr-6 text-xs md:text-base text-cblue-300 whitespace-nowrap">
       <div>Monthly Billing</div>
       <PlanControl setPlan={setPlan} />
-      <div>Yearly Billing</div>
-      <span className="bg-[#faece8] px-2 rounded-lg text-orange-400 text-sm">
-        25% discount
-      </span>
+      <div className="flex items-center">
+        Yearly Billing
+        <div className="bg-[#faece8] px-2 rounded-lg text-orange-400 text-sm ml-2 flex items-center">
+          <span className="block md:hidden">-</span>25%{' '}
+          <span className="hidden md:block"> discount</span>
+        </div>
+      </div>
     </div>
   )
 }
@@ -106,24 +137,25 @@ const PlanControl = ({ setPlan }) => {
 
 const ContainerBottom = () => {
   return (
-    <div className="px-14 py-10 flex items-center justify-between">
-      <ul className="space-y-2 text-cblue-300">
-        <li className="flex items-center gap-4">
+    <div className="flex flex-col items-center justify-between gap-8 py-8 md:py-10 px-14 md:flex-row">
+      <ul className="space-y-2 text-cblue-300 ">
+        <li className="flex items-center justify-center gap-4 md:justify-start">
           <Icon.Check />
           Unlimited websites
         </li>
-        <li className="flex items-center gap-4">
+        <li className="flex items-center justify-center gap-4 md:justify-start">
           <Icon.Check />
           100% data ownership
         </li>
-        <li className="flex items-center gap-4">
+        <li className="flex items-center justify-center gap-4 md:justify-start">
           <Icon.Check />
           Email reports
         </li>
       </ul>
+
       <button
         type="button"
-        className="bg-cblue-400 text-cblue-300 hover:text-cblue-100 px-16 py-4 rounded-full shadow-sm hover:shadow-xl"
+        className="w-3/4 h-12 rounded-full shadow-sm md:w-56 bg-cblue-400 text-cblue-300 hover:text-cblue-100 hover:shadow-xl"
       >
         Start my trial
       </button>
@@ -133,7 +165,7 @@ const ContainerBottom = () => {
 
 const Footer = () => {
   return (
-    <div className="attribution mt-auto">
+    <div className="mt-auto attribution">
       Challenge by
       <a
         href="https://www.frontendmentor.io?ref=challenge"
@@ -149,7 +181,7 @@ const Footer = () => {
 
 function App() {
   return (
-    <div className="min-h-screen flex justify-center items-center flex-col">
+    <div className="flex flex-col items-center justify-center min-h-screen p-5">
       <Header />
       <Container />
       <Footer />

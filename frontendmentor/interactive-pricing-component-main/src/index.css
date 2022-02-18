@@ -6,12 +6,18 @@
 
 body {
   font-family: 'Red Hat Display', sans-serif;
-  background: hsl(225, 100%, 94%);
+  background: hsl(230, 100%, 99%);
   background-image: url(./assets/bg-pattern.svg);
   background-repeat: no-repeat;
+  background-size: 100% 50%;
 }
 
-/* Input range START*/
+#header {
+  background: url(./assets/pattern-circles.svg) no-repeat;
+  background-position: center center;
+}
+
+/* INPUT RANGE START*/
 
 input[type='range'] {
   -webkit-appearance: none;
@@ -26,18 +32,20 @@ input[type='range'] {
 
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
-  position: relative; /* 設為相對位置，為了前後區塊的絕對位置而設定 */
-  width: 40px;
-  height: 40px;
-  background: #0fdac6 url('./assets/icon-slider.svg') no-repeat center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #0fdac6 url('./assets/icon-slider.svg') no-repeat center / 50%;
   box-shadow: 0 10px 20px #0fdac6;
   border-radius: 50%;
-  transition: 0.2s; /* 點選放大時候的漸變時間 */
+  transition: 0.2s;
 }
 
 input[type='range']:active::-webkit-slider-thumb {
-  background: #27aca2 url('./assets/icon-slider.svg') no-repeat center;
+  background: #27aca2 url('./assets/icon-slider.svg') no-repeat center / 50%;
 }
+
+/* INPUT RANGE END*/
 
 /* checkbox - START */
 .toggle-control {
@@ -62,6 +70,10 @@ input[type='range']:active::-webkit-slider-thumb {
   background: hsl(224, 23%, 55%);
 }
 
+.toggle-control input:checked ~ .control:hover {
+  background: #27aca2;
+}
+
 .toggle-control input:checked ~ .control:after {
   left: 27px;
   background: white;
@@ -76,6 +88,10 @@ input[type='range']:active::-webkit-slider-thumb {
   border-radius: 14px;
   background-color: #aeb3cb;
   transition: background-color 0.15s ease-in;
+}
+
+.toggle-control .control:hover {
+  background-color: #0fdac6;
 }
 
 .toggle-control .control:after {
