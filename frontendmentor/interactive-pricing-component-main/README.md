@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Repo](https://github.com/yuenu/layout-practice/tree/main/frontendmentor/interactive-pricing-component-main)
-- Live Site URL: [Live demo](https://yuenu.github.io/layout-practice/frontendmentor/interactive-pricing-component-main/)
+- Live Site URL: [Live demo](https://interactive-pricing-comp-769ea.web.app/)
 
 ## My process
 
