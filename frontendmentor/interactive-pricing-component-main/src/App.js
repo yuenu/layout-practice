@@ -16,7 +16,7 @@ const Header = () => {
       <h1 className="text-xl md:text-3xl text-cblue-400">
         Simple, traffic-based pricing
       </h1>
-      <p className="max-w-[230px] text-cblue-300">
+      <p className="max-w-[230px] md:max-w-fit text-cblue-300">
         Sign-up for our 30-day trial. No credit card required.
       </p>
     </header>
