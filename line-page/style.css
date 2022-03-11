@@ -38,6 +38,17 @@ header {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
+	background-color: #fff;
+	animation: 1s bgOpening ease-out;
+}
+
+@keyframes bgOpening {
+	0% {
+		clip-path: circle(0%);
+	}
+	100% {
+		clip-path: circle(100%);
+	}
 }
 
 .kvList {
