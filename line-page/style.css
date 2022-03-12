@@ -1,105 +1,220 @@
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	height: 200vh;
+  height: 200vh;
+}
+/* 
+.first {
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+} */
+
+.mv {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-width: 1200px;
+}
+
+.mv::before {
+  content: "";
+  display: inline-block;
+  animation: startBox 5s;
+  background: #1cd479;
+  width: 720px;
+  height: 160px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.mv::before {
+  position: absolute;
+  top: calc(50% - 120px);
+  left: calc(50% - 320px);
+}
+
+.mvIn {
+  z-index: 1;
+  display: inline-block;
+  background: #fff;
+  width: 720px;
+  height: 160px;
+  position: absolute;
+  top: calc(50% - 120px);
+  left: calc(50% - 320px);
+  animation: startBackground 2s;
+  transform: scale(0);
+}
+
+@keyframes startBackground {
+  0% {
+    transform: scale(30);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes startBox {
+  0% {
+    opacity: 1;
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+
+  7% {
+    transform-origin: left center;
+  }
+
+  8% {
+    transform: scaleX(1);
+    transform-origin: right center;
+  }
+
+  9% {
+    transform: scaleX(0.97);
+  }
+
+  13% {
+    transform: scaleX(1);
+  }
+
+  25% {
+    transform: scaleX(1);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  40% {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(0);
+    transform-origin: right center;
+    opacity: 0;
+  }
 }
 
 header {
-	position: fixed;
-	width: 100%;
-	height: 75px;
-	opacity: 0.95;
-	background: #fff;
-	box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
-	/* animation: startHeader 2.5s; */
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
-	z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  opacity: 0.95;
+  background: #fff;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+  /* animation: startHeader 2.5s; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
 }
 
 .logo {
-	width: 43px;
-	height: 16px;
+  width: 43px;
+  height: 16px;
 }
 
 .logo > img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .kv {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	background-color: #fff;
-	animation: 1s bgOpening ease-out;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  animation: 1s bgOpening ease-out;
 }
 
 @keyframes bgOpening {
-	0% {
-		clip-path: circle(0%);
-	}
-	100% {
-		clip-path: circle(100%);
-	}
+  0% {
+    clip-path: circle(0%);
+  }
+  100% {
+    clip-path: circle(100%);
+  }
 }
 
 .kvList {
-	list-style: none;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	transition: 300ms linear;
-	background: gray;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 300ms linear;
+  background: gray;
 }
 
 .scroll .kvList {
-	width: 900px;
-	height: 300px;
+  width: 900px;
+  height: 300px;
 }
 
 .kvList > li {
-	opacity: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 150% auto;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% auto;
 }
 
 .kvList > li.active {
-	animation-name: kvAnimate;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+  animation-name: kvAnimate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes kvAnimate {
-	0% {
-		opacity: 0;
-		background-size: 150% auto;
-	}
-	25% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 1;
-	}
-	75% {
-		opacity: 0;
-	}
-	to {
-		opacity: 0;
-		background-size: 120% auto;
-	}
+  0% {
+    opacity: 0;
+    background-size: 150% auto;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+    background-size: 120% auto;
+  }
 }
