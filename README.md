@@ -5,6 +5,8 @@
 
 ## Website
 
+[line landing page](https://yuenu.github.io/layout-practice/line-page/)
+
 [Website01 - Food](https://yuenu.github.io/layout-practice/frontendmentor/website01/)
 
 [Website02 - Blog](https://yuenu.github.io/layout-practice/frontendmentor/website02/)
