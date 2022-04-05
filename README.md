@@ -5,7 +5,7 @@
 
 ## Website
 
-[line landing page](https://yuenu.github.io/layout-practice/line-page/)
+[Line landing page](https://yuenu.github.io/layout-practice/line-page/)
 
 [Website01 - Food](https://yuenu.github.io/layout-practice/frontendmentor/website01/)
 
@@ -24,6 +24,8 @@
 [Website08 - Hotal](https://yuenu.github.io/layout-practice/advanced-css-course-master/Trillo/starter/)
 
 ## Component
+
+[qr-code-component](https://yuenu.github.io/layout-practice/frontendmentor/qr-code-component/)
 
 [order-summary-component-main](https://yuenu.github.io/layout-practice/frontendmentor/order-summary-component-main/)
 
