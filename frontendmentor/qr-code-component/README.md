@@ -27,8 +27,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/yuenu/layout-practice/tree/main/frontendmentor/qr-code-component)
-- Live Site URL: [Add live site URL here](https://yuenu.github.io/layout-practice/frontendmentor/qr-code-component/)
+- Solution URL: [Repo](https://github.com/yuenu/layout-practice/tree/main/frontendmentor/qr-code-component)
+- Live Site URL: [Live demo](https://yuenu.github.io/layout-practice/frontendmentor/qr-code-component/)
 
 ## My process
 
