@@ -1,58 +1,82 @@
 *,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
 
 section {
-	height: 100vh;
-	position: relative;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
 #section2,
 #section3 {
-	background-color: #000;
+  background-color: #000;
 }
 
-#section2 > .phone {
-	transform: scale(3);
+#section2 {
+  --scale: 3;
 }
 
-#section3 > .phone {
-	transform: scale(1);
+#section3 {
+  --scale: 1;
 }
 
-.text {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 100px;
+.sticky {
+  position: sticky !important;
+  top: 0;
+  left: 0;
+}
+
+.static {
+  position: static !important;
 }
 
 .phone {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(var(--scale));
 }
 
 .phone > * {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .phone > img {
-	width: 60%;
-	clip-path: inset(14% 7% round 5%);
+  width: 60%;
+  clip-path: inset(16% 9% round 1%);
 }
 
 .phone > .rect {
-	width: 50%;
-	height: 0;
-	padding-top: 25%;
-	border: 10px solid #fff;
-	border-radius: 10px;
+  width: 50%;
+  height: 0;
+  padding-top: 25%;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
 }

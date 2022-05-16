@@ -1,11 +1,10 @@
 # Layout Practice
 
 ### If you like this repository, please give me a star, thank you
-### 如果你喜歡這個專案，請右上角star，謝謝
+
+### 如果你喜歡這個專案，請右上角 star，謝謝
 
 ## Website
-
-[Line landing page](https://yuenu.github.io/layout-practice/line-page/)
 
 [Website01 - Food](https://yuenu.github.io/layout-practice/frontendmentor/website01/)
 
@@ -52,6 +51,10 @@
 [pricing-component-with-toggle-master](https://yuenu.github.io/layout-practice/frontendmentor/component/pricing-component-with-toggle-master/)
 
 ## Other
+
+[Line landing page](https://yuenu.github.io/layout-practice/line-page/)
+
+[apple-scroll-animate](https://yuenu.github.io/layout-practice/apple-scroll-animate/)
 
 [Bubble-animation](https://yuenu.github.io/layout-practice/medium/Bubble-animatied-homepage/)
 
