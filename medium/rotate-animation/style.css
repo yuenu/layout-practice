@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+main img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 3px #fff;
+  animation-name: move, scale, rotate;
+  animation-duration: 2.75s, 2.75s, 2.75s;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-timing-function: ease-in-out, linear, linear;
+  opacity: 0;
+}
+
+main img:nth-of-type(2) {
+  animation-delay: 0.85s;
+}
+
+main img:nth-of-type(3) {
+  animation-delay: 1.67s;
+}
+
+@keyframes move {
+  0% {
+    left: 100px;
+  }
+  70% {
+    left: -100px;
+  }
+  100% {
+    left: 100px;
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+  }
+  32% {
+    z-index: 1;
+    transform: scale(0.8);
+    animation-timing-function: ease-in;
+  }
+  70% {
+    z-index: 2;
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    z-index: 2;
+    transform: scale(1.2);
+    animation-timing-function: ease-in-out;
+  }
+  82% {
+    z-index: 2;
+    transform: scale(1.5);
+  }
+  90% {
+    z-index: 2;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
