@@ -122,6 +122,8 @@
 
 [rotate-animation](https://yuenu.github.io/layout-practice/medium/rotate-animation)
 
+[slide-animation](https://yuenu.github.io/layout-practice/medium/slide-animation)
+
 ## 金魚系列
 
 [002-互動圖文卡片](https://yuenu.github.io/layout-practice/medium/AMOS/002-%E4%BA%92%E5%8B%95%E5%9C%96%E6%96%87%E5%8D%A1%E7%89%87/)

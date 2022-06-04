@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.c-icon {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: 400ms;
+}
+
+.c-icon.show {
+  opacity: 1;
+}
+
+.c-left,
+.c-right {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 500ms;
+}
+
+.c-left {
+  width: 55%;
+  left: -55%;
+  background-color: #ff9921;
+  clip-path: polygon(0 0%, 100% 0, 89% 50%, 99% 50%, 89% 100%, 0 100%);
+}
+
+.c-right {
+  right: -52%;
+  width: 52%;
+  background-color: #21a1ff;
+  clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%, 10% 50%, 0 50%);
+}
+
+.c-left.show {
+  left: 0;
+}
+
+.c-right.show {
+  right: 0;
+}
+
+.c-avatar {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.c-right .c-avatar {
+  box-shadow: 0px 0px 0px 6px #fff;
+  border-radius: 50%;
+}
+
+.c-name {
+  color: #ffffff;
+  max-width: 220px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.c-level {
+  margin-bottom: 70px;
+}
