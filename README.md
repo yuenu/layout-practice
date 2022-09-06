@@ -24,6 +24,8 @@
 
 ## Component
 
+[interactive-rating-component](https://yuenu.github.io/layout-practice/frontendmentor/interactive-rating-component/)
+
 [qr-code-component](https://yuenu.github.io/layout-practice/frontendmentor/qr-code-component/)
 
 [order-summary-component-main](https://yuenu.github.io/layout-practice/frontendmentor/order-summary-component-main/)
