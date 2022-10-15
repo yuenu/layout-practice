@@ -1,80 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <title>Frontend Mentor | Interactive card details form</title>
 
-  <main class="main">
-    <div class="card-front">
-      <img src="./images/card-logo.svg" alt="">
-      0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="card-section">
+        <div class="card-front">
+          <img src="./images/card-logo.svg" alt="" />
+          <div class="card-front-content">
+            <div class="card-front-line1">0000 0000 0000 0000</div>
+            <div class="card-front-line2">
+              <span class="card-front-name">Jane Appleseed</span>
+              <span class="card-front-date">00/00</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-back">
+          <p class="card-back-secret-code">000</p>
+        </div>
+      </section>
 
-    </div>
-    <div class="card-back">
-      000
-    </div>
-    
-    <form class="container">
-      <div class="item">
-        <label class="item-label">
-          Cardholder Name
-        </label>
-        <input class="item-input" type="text">
-      </div>
-      <div class="item">
-        <label class="item-label" placeholder="e.g. Jane Appleseed">
-          Card Number
-        </label>
-        <input class="item-input" type="text" placeholder="e.g. 1234 5678 9123 0000">
-      </div>
-      <div class="item">
-        <label class="item-label" placeholder="e.g. Jane Appleseed">
-          Card Number
-        </label>
-        <input class="item-input" type="text" placeholder="e.g. 1234 5678 9123 0000">
-      </div>
-      <div class="item item-secret">
-        <label class="item-label" placeholder="e.g. Jane Appleseed">
-          Exp. Date (MM/YY)
-        </label>
-        <input class="item-input" type="text" placeholder="MM">
-        <input class="item-input" type="text" placeholder="YY">
-        <label class="item-label" placeholder="e.g. Jane Appleseed">
-          CVC
-        </label>
-        <input class="item-input" type="text" placeholder=" e.g. 123">
-      </div>
-      <button type="submit">Confirm</button>
-    </form>
+      <form class="container">
+        <div class="item">
+          <label class="item-label" for="cname"> Cardholder Name </label>
+          <input
+            id="cname"
+            name="cardname"
+            class="item-input"
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+          />
+        </div>
+        <div class="item">
+          <label class="item-label" maxlength="20" for="ccnum"
+            >Card Number</label
+          >
+          <input
+            id="ccnum"
+            name="cardnumber"
+            class="item-input"
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            maxlength="16"
+          />
+        </div>
 
-    <div class="complete-container">
-      <img src="./images/icon-complete.svg" alt="">
+        <div class="item item-secret">
+          <div class="item-secret-date">
+            <label class="item-label" placeholder="e.g. Jane Appleseed">
+              Exp. Date (MM/YY)
+            </label>
+            <div class="item-secret-date-inputs">
+              <input
+                id="expmonth"
+                name="expmonth"
+                class="item-input"
+                type="text"
+                placeholder="MM"
+                maxlength="2"
+              />
+              <input
+                id="expyear"
+                name="expyear"
+                class="item-input"
+                type="text"
+                placeholder="YY"
+                maxlength="2"
+              />
+            </div>
+          </div>
+          <div class="item-secret-cvc">
+            <label
+              class="item-label"
+              placeholder="e.g. Jane Appleseed"
+              for="cvv"
+            >
+              CVC
+            </label>
+            <input
+              id="cvv"
+              name="cvv"
+              class="item-input"
+              type="text"
+              placeholder="e.g. 123"
+              maxlength="3"
+            />
+          </div>
+        </div>
+        <button type="submit" class="confirm-button">Confirm</button>
+      </form>
+    </main>
+
+    <div class="complete-container" style="display: none">
+      <img src="./images/icon-complete.svg" alt="" />
       <div class="heading">Thank you!</div>
       <p>We've added your card details</p>
       <button type="button">Continue</button>
     </div>
-  </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/yuenu">yuenu</a>.
-  </div>
 
-  <script src="app.js"></script>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/yuenu">yuenu</a>.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
