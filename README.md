@@ -24,6 +24,8 @@
 
 ## Component
 
+[interactive-card-details-form-main](https://yuenu.github.io/layout-practice/frontendmentor/interactive-card-details-form-main/)
+
 [interactive-rating-component](https://yuenu.github.io/layout-practice/frontendmentor/interactive-rating-component/)
 
 [qr-code-component](https://yuenu.github.io/layout-practice/frontendmentor/qr-code-component/)
