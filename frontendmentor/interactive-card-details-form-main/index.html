@@ -25,6 +25,8 @@
       }
     </style>
     <link rel="stylesheet" href="./styles.css" />
+    <script type="module" defer src="utils.js"></script>
+    <script type="module" defer src="app.js"></script>
   </head>
   <body>
     <main class="main">
@@ -35,7 +37,11 @@
             <div class="card-front-line1">0000 0000 0000 0000</div>
             <div class="card-front-line2">
               <span class="card-front-name">Jane Appleseed</span>
-              <span class="card-front-date">00/00</span>
+              <span class="card-front-date">
+                <span class="card-front-date-month">00</span>
+                /
+                <span class="card-front-date-year">00</span>
+              </span>
             </div>
           </div>
         </div>
@@ -46,27 +52,30 @@
 
       <form class="container">
         <div class="item">
-          <label class="item-label" for="cname"> Cardholder Name </label>
-          <input
-            id="cname"
-            name="cardname"
-            class="item-input"
-            type="text"
-            placeholder="e.g. Jane Appleseed"
-          />
+          <label class="item-label"> Cardholder Name </label>
+          <div class="item-input">
+            <input
+              id="cname"
+              name="cardname"
+              type="text"
+              placeholder="e.g. Jane Appleseed"
+              maxlength="20"
+            />
+          </div>
+          <div class="error-message">Can't be blank</div>
         </div>
         <div class="item">
-          <label class="item-label" maxlength="20" for="ccnum"
-            >Card Number</label
-          >
-          <input
-            id="ccnum"
-            name="cardnumber"
-            class="item-input"
-            type="text"
-            placeholder="e.g. 1234 5678 9123 0000"
-            maxlength="16"
-          />
+          <label class="item-label">Card Number</label>
+          <div class="item-input">
+            <input
+              id="ccnum"
+              name="cardnumber"
+              type="text"
+              placeholder="e.g. 1234 5678 9123 0000"
+              maxlength="19"
+            />
+          </div>
+          <div class="error-message">Wrong format, numbers only</div>
         </div>
 
         <div class="item item-secret">
@@ -75,52 +84,55 @@
               Exp. Date (MM/YY)
             </label>
             <div class="item-secret-date-inputs">
-              <input
-                id="expmonth"
-                name="expmonth"
-                class="item-input"
-                type="text"
-                placeholder="MM"
-                maxlength="2"
-              />
-              <input
-                id="expyear"
-                name="expyear"
-                class="item-input"
-                type="text"
-                placeholder="YY"
-                maxlength="2"
-              />
+              <div class="item-input">
+                <input
+                  id="expmonth"
+                  name="expmonth"
+                  type="text"
+                  placeholder="MM"
+                  maxlength="2"
+                />
+              </div>
+              <div class="item-input">
+                <input
+                  id="expyear"
+                  name="expyear"
+                  type="text"
+                  placeholder="YY"
+                  maxlength="2"
+                />
+              </div>
             </div>
+            <div class="error-message">Can't be blank</div>
           </div>
           <div class="item-secret-cvc">
-            <label
-              class="item-label"
-              placeholder="e.g. Jane Appleseed"
-              for="cvv"
-            >
+            <label class="item-label" placeholder="e.g. Jane Appleseed">
               CVC
             </label>
-            <input
-              id="cvv"
-              name="cvv"
-              class="item-input"
-              type="text"
-              placeholder="e.g. 123"
-              maxlength="3"
-            />
+            <div class="item-input">
+              <input
+                id="cvv"
+                name="cvv"
+                type="text"
+                placeholder="e.g. 123"
+                maxlength="3"
+              />
+            </div>
+            <div class="error-message">Can't be blank</div>
           </div>
         </div>
-        <button type="submit" class="confirm-button">Confirm</button>
+        <button type="submit" class="confirm-button" id="confirm-button">
+          Confirm
+        </button>
       </form>
-    </main>
 
-    <div class="complete-container" style="display: none">
-      <img src="./images/icon-complete.svg" alt="" />
-      <div class="heading">Thank you!</div>
-      <p>We've added your card details</p>
-      <button type="button">Continue</button>
-    </div>
+      <div class="complete-container" style="display: none">
+        <img src="./images/icon-complete.svg" alt="" />
+        <div class="heading">Thank you!</div>
+        <p>We've added your card details</p>
+        <button class="confirm-button" type="button">Continue</button>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
@@ -128,7 +140,5 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/yuenu">yuenu</a>.
     </div>
-
-    <script src="app.js"></script>
   </body>
 </html>

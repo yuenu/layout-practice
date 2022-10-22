@@ -6,7 +6,6 @@
   --light-gray: hsl(270, 3%, 87%);
   --dark-gray: hsl(279, 6%, 55%);
   --violet: hsl(278, 68%, 11%);
-  --active-border: linear-gradient(hsl(249, 99%, 64%) to hsl(278, 94%, 30%));
 }
 
 *,
@@ -29,7 +28,7 @@ body {
   background-image: url(./images/bg-main-desktop.png);
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 30% 100%;
+  background-size: 35% 100%;
 }
 
 .main {
@@ -39,7 +38,7 @@ body {
   justify-content: space-between;
   max-width: 1400px;
   margin: auto;
-  padding: 1.5rem;
+  padding: 0 4vw;
 }
 
 .attribution {
@@ -139,15 +138,34 @@ body {
 .item-input {
   height: 2.8rem;
   width: 100%;
-  border: 1px solid var(--light-gray);
-  outline: none;
+  background-color: var(--light-gray);
+  padding: 1px;
   border-radius: 0.4rem;
-  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.item-input.active {
+  background-image: linear-gradient(to right, #6448fe 0%, #600594 100%);
+}
+
+.item-input.error {
+  background: var(--red);
+}
+
+.item-input input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background: #fff;
+  border-radius: 0.3rem;
+  overflow: hidden;
   font-size: 1.1rem;
   font-family: inherit;
 }
 
-.item-input::placeholder {
+.item-input input::placeholder {
   color: var(--light-gray);
 }
 
@@ -186,9 +204,48 @@ body {
   opacity: 0.9;
 }
 
+.error-message {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: none;
+  color: var(--red);
+}
+
+.complete-container {
+  width: 26rem;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.complete-container img {
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+
+.complete-container .heading {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--violet);
+  letter-spacing: 0.2rem;
+}
+
+.complete-container p {
+  font-size: 1rem;
+  color: var(--dark-gray);
+  margin-bottom: 3rem;
+}
+
+.complete-container .confirm-button {
+  width: 100%;
+}
+
 @media (max-width: 1400px) {
   .main {
     max-width: 1200px;
+    padding: 0 6vw;
   }
 
   .card-front,
@@ -274,6 +331,11 @@ body {
     margin-bottom: 30vh;
   }
 
+  .complete-container {
+    width: 100%;
+    margin-bottom: 30vh;
+  }
+
   .item-label {
     font-size: 0.9rem;
   }
@@ -281,6 +343,5 @@ body {
   .item-secret-cvc {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 }
