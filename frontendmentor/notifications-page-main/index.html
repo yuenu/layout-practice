@@ -1,135 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <link rel="stylesheet" href="./style.css">
-  <script defer src="app.js"></script>
-</head>
-<body>
+    <title>Frontend Mentor | Notifications page</title>
 
-  <div class="container">
-    <div class="heading">
-      <div class="heading-title">
-        Notifications
-        <span class="heading-badge">3</span>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div class="heading-title">
+          Notifications
+          <span id="unread-count" class="heading-badge">3</span>
+        </div>
+        <button type="button" id="marked-read" class="heading-marked">
+          Mark all as read
+        </button>
       </div>
-      <button type="button" class="heading-marked">
-        Mark all as read
-      </button>
+
+      <div class="content">
+        <article class="card card-unread">
+          <div class="card-heading">
+            <div class="card-img">
+              <img
+                src="./assets/images/avatar-mark-webber.webp"
+                height="40"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <h5 class="card-name">Mark Webber</h5>
+              <span class="card-description"
+                >reacted to your recent post<span class="card-reacted"
+                  >My first tournament today!</span
+                ></span
+              >
+              <p class="card-time">1m ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="card card-unread">
+          <div class="card-heading">
+            <div class="card-img">
+              <img
+                src="./assets/images/avatar-angela-gray.webp"
+                height="40"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <h5 class="card-name">Angela Gray</h5>
+              <span class="card-description">followed you</span>
+              <p class="card-time">5m ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-unread">
+          <div class="card-heading">
+            <div class="card-img">
+              <img
+                src="./assets/images/avatar-jacob-thompson.webp"
+                height="40"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <h5 class="card-name">Jacob Thompson</h5>
+              <span class="card-description"
+                >has joined your group
+                <a href="#" class="card-group">Chess Club</a></span
+              >
+              <p class="card-time">1 day ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <div class="card-img">
+              <img
+                src="./assets/images/avatar-rizky-hasanuddin.webp"
+                height="40"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <h5 class="card-name">Rizky Hasanuddin</h5>
+              <span class="card-description">sent you a private message</span>
+              <p class="card-time">5 days ago</p>
+            </div>
+          </div>
+          <div class="card-message">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <div class="card-img">
+              <img
+                src="./assets/images/avatar-kimberly-smith.webp"
+                height="40"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <img
+                class="card-picture"
+                src="./assets/images/image-chess.webp"
+                alt=""
+                height="40"
+              />
+              <h5 class="card-name">Kimberly Smith</h5>
+              <span class="card-description">commented on your picture</span>
+              <p class="card-time">1 week ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <div class="card-img">
+              <img
+                src="./assets/images/avatar-nathan-peterson.webp"
+                height="40"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <h5 class="card-name">Nathan Peterson</h5>
+              <span class="card-description"
+                >reacted to your recent post
+                <a href="#" class="card-post"
+                  >5 end-game strategies to increase your win rate</a
+                ></span
+              >
+              <p class="card-time">2 weeks ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <div class="card-img">
+              <img
+                src="./assets/images/avatar-anna-kim.webp"
+                height="40"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <h5 class="card-name">Anna Kim</h5>
+              <span
+                >left the group
+                <a href="#" class="card-group">Chess Club</a></span
+              >
+              <p class="card-time">2 weeks ago</p>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
 
-    <div class="content">
-      <article class="card card-unread">
-        <div class="card-heading">
-          <div class="card-img">
-            <img src="./assets/images/avatar-mark-webber.webp" height="40" alt="">
-          </div>
-          <div class="card-content ">
-            <h5 class="card-name">Mark Webber</h5>
-            <span class="card-description">reacted to your recent post<span class="card-reacted">My first tournament today!</span></span>
-            <p class="card-time">1m ago</p>
-          </div>
-        </div>
-      </article>
-      <article class="card card-unread">
-        <div class="card-heading">
-          <div class="card-img">
-            <img src="./assets/images/avatar-angela-gray.webp" height="40" alt="">
-          </div>
-          <div class="card-content">
-            <h5 class="card-name">Angela Gray</h5>
-            <span class="card-description">followed you</span>
-            <p class="card-time">5m ago</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="card card-unread">
-        <div class="card-heading">
-          <div class="card-img">
-            <img src="./assets/images/avatar-jacob-thompson.webp" height="40" alt="">
-          </div>
-          <div class="card-content">
-            <h5 class="card-name">Jacob Thompson</h5>
-            <span class="card-description">has joined your group <a href="#" class="card-group">Chess Club</a></span>
-            <p class="card-time">1 day ago</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-heading">
-          <div class="card-img">
-            <img src="./assets/images/avatar-rizky-hasanuddin.webp" height="40" alt="">
-          </div>
-          <div class="card-content">
-            <h5 class="card-name">Rizky Hasanuddin</h5>
-            <span class="card-description">sent you a private message</span>
-            <p class="card-time">5 days ago</p>
-          </div>
-        </div>
-        <div class="card-message">
-          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-          I'm already having lots of fun and improving my game.
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-heading">
-          <div class="card-img">
-            <img src="./assets/images/avatar-kimberly-smith.webp" height="40" alt="">
-          </div>
-          <div class="card-content">
-            <h5 class="card-name">Kimberly Smith </h5>
-            <span class="card-description">commented on your picture</span>
-            <img class="card-picture" src="./assets/images/image-chess.webp" alt="" height="40">
-            <p class="card-time">1 week ago</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-heading">
-          <div class="card-img">
-            <img src="./assets/images/avatar-nathan-peterson.webp" height="40" alt="">
-          </div>
-          <div class="card-content">
-            <h5 class="card-name">Nathan Peterson</h5>
-            <span class="card-description">reacted to your recent post <a href="#" class="card-post">5 end-game strategies to increase your win rate</a></span>
-            <p class="card-time">2 weeks ago</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-heading">
-          <div class="card-img">
-            <img src="./assets/images/avatar-anna-kim.webp" height="40" alt="">
-          </div>
-          <div class="card-content">
-            <h5 class="card-name">Anna Kim</h5>
-            <span>left the group <a href="#" class="card-group">Chess Club</a></span>
-            <p class="card-time">2 weeks ago</p>
-          </div>
-        </div>
-      </article>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/yuenu">yuenu</a>.
     </div>
-  </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/yuenu">yuenu</a>.
-  </div>
-</body>
+  </body>
 </html>
