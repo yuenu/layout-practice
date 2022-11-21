@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
