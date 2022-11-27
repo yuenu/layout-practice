@@ -58,6 +58,8 @@
 
 ## Other
 
+[Toast message](https://yuenu.github.io/layout-practice/medium/toast-message/)
+
 [Line landing page](https://yuenu.github.io/layout-practice/line-page/)
 
 [apple-scroll-animate](https://yuenu.github.io/layout-practice/apple-scroll-animate/)
