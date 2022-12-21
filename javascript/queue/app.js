@@ -33,6 +33,13 @@ class actionLoop {
     clearInterval(this.#queue[key])
     delete this.#queue[key]
   }
+
+  removeAllLoop() {
+    for (let k in this.#queue) {
+      clearInterval(this.#queue[k]);
+      delete this.#queue[k];
+    }
+  }
 }
 
 
