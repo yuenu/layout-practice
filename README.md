@@ -24,6 +24,8 @@
 
 ## Component
 
+[news-homepage](https://yuenu.github.io/layout-practice/frontendmentor/news-homepage-main/)
+
 [notifications-page](https://yuenu.github.io/layout-practice/frontendmentor/notifications-page-main/)
 
 [interactive-card-details-form-main](https://yuenu.github.io/layout-practice/frontendmentor/interactive-card-details-form-main/)
