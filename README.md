@@ -1,9 +1,5 @@
 # Layout Practice
 
-### If you like this repository, please give me a star, thank you
-
-### 如果你喜歡這個專案，請右上角 star，謝謝
-
 ## Website
 
 [Website01 - Food](https://yuenu.github.io/layout-practice/frontendmentor/website01/)
@@ -128,11 +124,13 @@
 
 [Typewriting-effect](https://yuenu.github.io/layout-practice/medium/Typewriting-effect/)
 
-# animation
+## animation
 
-[rotate-animation](https://yuenu.github.io/layout-practice/medium/rotate-animation)
+[Rotate-Animation](https://yuenu.github.io/layout-practice/medium/rotate-animation)
 
-[slide-animation](https://yuenu.github.io/layout-practice/medium/slide-animation)
+[Slide-Animation](https://yuenu.github.io/layout-practice/medium/slide-animation)
+
+[Fancy-Hover-Avatar](https://yuenu.github.io/layout-practice/small/fancy-hover-avatar)
 
 ## 金魚系列
 
