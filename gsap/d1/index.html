@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gsap</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <style>
+    .circle {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+
+    #b {
+      background-color: blue;
+    }
+
+    #g {
+      background-color: green;
+    }
+
+    #r {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>123</h2>
+  <img id="image1" src="testImage.png" width="200">
+  <svg width="900" height="450">
+    <rect class="rect" x="400" y="300" width="100" height="100" fill="indigo" stroke="black"></rect>
+    <rect class="rect" x="200" y="300" width="100" height="100" fill="indigo" stroke="black"></rect>
+  </svg>
+  <div id="b" class="circle"><p>gasp.to()</p></div>
+  <div id="g" class="circle"><p>gasp.to()</p></div>
+  <div id="r" class="circle"><p>gasp.to()</p></div>
+  <script src="./app.js"></script>
+</body>
+</html>
